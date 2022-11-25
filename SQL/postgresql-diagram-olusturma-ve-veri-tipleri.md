@@ -1,9 +1,13 @@
 ## **PostgreSQL Diagram Oluşturma:**
 
-*   Diagram oluşturulmak istenen ilgili database sağ tıklanır.
-*   Ardından `Generate ERD` seçeneği seçilir.
-![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/d445300f8f434cf5c0b86ffa5095c1b09aff9ca0f4ac9752.png)  
-*    Database'de bulunan tablo ve bağlantılara göre diagram oluşturulacaktır.
+\-Diagram oluşturulmak istenen ilgili database sağ tıklanır.
+
+\-Ardından `Generate ERD` seçeneği seçilir.
+
+![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/d445300f8f434cf5c0b86ffa5095c1b09aff9ca0f4ac9752.png)
+
+\-Database'de bulunan tablo ve bağlantılara göre diagram oluşturulacaktır.
+
 ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/31d626a43617df3245c5581e5aecbac404b5d5b810a94ee7.png)
 
 ## **PostgreSQL Veri Tipleri:**

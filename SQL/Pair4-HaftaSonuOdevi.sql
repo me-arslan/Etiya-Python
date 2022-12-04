@@ -43,6 +43,7 @@ $$
 
 
 -- 6 - Ürünleri İndirim Oranınları Uygulanmış Şekilde Listeleme 
+
 select * from product_discounts
 select p.id,p.name as "Ürün Adı",p.unit_price as "Ürün Fiyatı", pd.discount_value as "İndirim Oranı", (p.unit_price / 100 * (100 - pd.discount_value)) as "İndirimli Fiyatı"
 from products as p inner join product_discounts as pd on pd.id = p.product_discount_id
@@ -179,9 +180,7 @@ having count (distinct countries.country_name) > 1
 select * from addresses 
 left join orders on orders.shipment_address_id = addresses.id
 where orders.shipment_address_id is null
-
-select * from addresses		
-select * from orders		
+		
 		
 		
 		

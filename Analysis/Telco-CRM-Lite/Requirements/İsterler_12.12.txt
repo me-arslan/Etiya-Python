@@ -1,0 +1,497 @@
+Requirement 1: 
+Summary: Etiya Akademi kullanıcıları, login ekranından kullanıcı adı ve şifre bilgisi ile giriş yapabilmelidir.
+
+Acceptance Criterias:
+1. Kullanıcının, kullanıcı adı girebileceği bir girdi kutusu oluşturulmalıdır.
+2. Kullanıcının, şifre girebileceği bir girdi kutusu oluşturulmalıdır.
+ 2.1. Şifre girdi kutusu doldurulurken girilen şifre (*) gösterimi ile gizlenmelidir.
+ 2.2 Kullanıcının istediği takdirde girdiği şifreyi görebilmesi için şifreyi girdiği kutunun yanına bir göz butonu eklenmelidir.
+3. Kullanıcının girmiş olduğu bilgiler ile giriş yapabilmesi için "Login" butonu oluşturulmalıdır.
+4. Kullanıcı adı  ve şifre alanlarına girilen bilgilerin eksik veya 
+hatalı olması durumunda  veya kullanıcı adı-şifre uyumsuzluğu durumunda 
+sistem “Wrong user name or password. Please try again” uyarı mesajını 
+ekranda göstermelidir.
+5. Kullanıcı başarılı şekilde bilgileri doldurup "Login" butonuna tıkladığında müşteri 
+arama ekranı açılmalıdır.
+
+
+Requirement 2:
+Summary: Müşteri arama ekranının oluşturulması ve müşterilerin filtrelenebilmesi
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-1 Story'sindeki işlemleri tamamladığı ve filtreleme sayfasına geldiği varsayılmıştır.
+
+1. CRM-1 story'sinde belirtilmiş giriş ekranından giriş yapmış olan kullanıcının bilgileri mockupta gösterildiği gibi "müşteri arama ekranı"nda gösterilmelidir.
+2. Kullanıcının web sayfasını Türkçe ve ya İngilizce dilinde görüntüleyebilmesi için bir seçim kutusu oluşturulmalıdır.
+ 2.1. Web sayfası varsayılan olarak İngilizce dilinde olmalıdır.
+3. Müşteri arama ekranında görüntülenen sekmeyi ve diğer sekmeleri gösteren bir bilgi ekranı oluşturulmalıdır.Tasarım aşağıdaki mockup gibi olmalıdır.
+ 3.1. Sekmeler sırasıyla Dashboard, Business 2 Consumer, Business 2 Business, Settings olarak belirtilmelidir.
+ **3.2. Gerçekleştirilen işlem Business 2 Consumer sekmesi içerisinde gerçekleştirilmelidir.**
+ 3.3. Bilgi ekranı içerisinde kullanıcının çıkış yapabilmesi için bir logout butonu oluşturulmalıdır. 
+4. Kullanıcının müşterileri filtreleyebilmesi için bir filtreleme form ekranı oluşturulmalıdır.
+ 4.1. Müşteri arama ekranında filtreleme yapılabilecek sistemde tanımlı müşteri bilgilerini ve bilgilere girilebilecek veri tiplerini ekte bulunan musteriDetay.xlsx dosyasında bulabilirsiniz.
+ 4.2. Filtreleme form ekranı içerisindeki bilgilerin hepsi girdi kutusu olarak belirtilmelidir. 
+ 4.3. Müşteri bilgileri için filtreleme yapılırken, girdinin tamamının yazılarak aratılması gereklidir. Büyük küçük harf duyarlılığı yoktur.
+ Örneğin; Kullanıcı ismi aratılırken Nesibe için Nes yazdığında sonuç vermemeli ve kullanıcı Nesibe olarak arama yapmalıdır.
+ 4.4. Kullanıcının filtreleme form ekranında girdileri girdikten sonra aramayı yapabilmesi bir "Search" butonu eklenmelidir. 
+ 4.5. Bir veya birden fazla girdi girildikten sonra, Filtrelerin hepsinin aynı anda kaldırılabilmesi için bir "Clear" butonu oluşturulmalıdır.
+ 4.6. Kullanıcı, filtre alanlarından herhangi birini doldurana kadar “Search” ve "Clear" butonları pasif kalmalıdır. 
+ 4.7. Kullanıcı filtreleme alanına gerekli bilgileri girip “search” butonuna bastığında, herhangi bir kayıt bulunmaması durumunda “No customer found! Would you like to create the customer?” uyarısı gösterilmeli ve “Create Customer” butonu oluşturulmalıdır. (pop-up da olabilir.)
+	4.7.1. "Create Customer" butonuna tıklandığında kullanıcı yaratma ekranına yönlendirmeli ve filtreleme form ekranında girilmiş olan bilgiler kullanıcı yaratma ekranında varsayılan olarak gösterilmeli. 
+ 4.8. Kullanıcı filtreleme alanlarına gerekli bilgileri girip “search" butonuna bastığında bulunan müşteri kayıtları bir tablo içerisinde gösterilmelidir.
+	Bu tabloda gösterilecek bilgiler:
+	-	Customer ID
+	-	First Name
+	-	Second Name
+	-	Last Name
+	-	Role
+	-	NAT ID Number
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+5. Filtreleme form ekranının yanında "Create Customer" butonu oluşturulmalıdır. "Create Customer" butonuna tıklandığında kullanıcı yaratma ekranına yönlendirmelidir. 
+6. Kullanıcı, bulunan müşteri kayıtlarının gösterildiği listede, görüntülemeyi istediği müşterinin “Customer ID” değerine tıkladığında “Customer Info” ekranı açılacaktır.
+
+
+Requirement 4: 3 2'ye dahil edildi.
+Summary: Kullanıcının demografik bilgilerinin girildiği ekranın oluşturulması.
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-2 içerisindeki sayfada "Create Customer" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-2 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının, demografik bilgilerini girebileceği bir form ekranı oluşturulmalıdır.
+ 2.1. Kullanıcı form ekranı içerisindeki girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+3. Kullanıcının işlemi iptal edip CRM-2 de yapılmış olan Müşteri Arama Ekranına yönlendirilebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+4. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı tarafından Demografik ekran içerisinde girilen “Nationality ID” sistemde var olan müşteri verileri ile karşılaştırılarak, eşleşen bir kayıt olup olmadığı sorgulanmalıdır.
+  4.1.1. Eşleşen bir "Nationality ID" olması durumunda bir uyarı pop-up ekranı açılarak kullanıcıya “A customer is already exist with this Nationality ID” uyarı mesajı gösterilmelidir.
+ 4.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra, kullanıcı Müşteri Adresi Ekranına yönlendirmelidir.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+
+
+Requirement 5:
+Summary: Kullanıcının adres bilgilerinin girildiği ve gözlemlendiği ekranın oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-4 içerisindeki sayfada "Next" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-2 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının yeni bir adres oluşturabilmesi için "Add New Address" butonu oluşturulmalıdır. 
+ 2.1. "Add New Address" butonuna tıklandığında kullanıcının adres bilgilerinin girebileceği bir pop-up ekranı açılmalıdır.
+ Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+ 2.2. Adres bilgilerinin kullanıcı tarafından girilebilmesi için lokasyon seçim kutuları oluşturulmalıdır. Lokasyonlar, bu lokasyon seçim kutularında lokasyon adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+ 2.3. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+ 2.4. "Add New Address" butonu kaydedilmiş olan adresin yanında görüntülenebilmeli ve aktif olmalıdır.
+3. Adres Bilgi Ekranında kullanıcının kayıt etmiş olduğu adres görüntülenebilmeli. 
+Tasarım mockuptaki gibi olmalıdır.
+ 3.1. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+ 3.2. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilecektir.
+4. Kullanıcının işlemi iptal edip CRM-4 de yapılmış olan Demografik Bilgi Ekranına yönlendirilebilmesi için bir "Previous" butonu oluşturulmalıdır.
+5. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 5.1. Adres bilgisi ekranı ilk açıldığında herhangi bir adres bilgisi girilmemiş olduğu için next butonu pasif kalmalıdır.
+ 5.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra kullanıcı Müşteri Kontakt Bilgi Ekranına yönlendirmelidir.
+
+
+Requirement 6:
+Summary: Kullanıcının kontakt bilgilerinin girildiği ve gözlemlendiği ekranın oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-5 içerisindeki sayfada "Next" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-2 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının kontakt bilgilerini doldurabileceği kontakt girdi kutuları oluşturulmalıdır. 
+Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+ 2.1. Kullanıcının kontakt girdi kutularına girdiği verilerin geçersiz bir formatta olması halinde girdi kutusu belirgin hale getirilmeli (kırmızı highlight, stroke) ve ekranda "Your input must be in a valid format" uyarısı belirmeli.
+ Örnek mockuptaki gibi olmalıdır.
+3. Kullanıcının işlemi iptal edip CRM-5 de yapılmış olan Adres Bilgi Ekranına yönlendirilebilmesi için bir "Previous" butonu oluşturulmalıdır.
+4. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemini tamamlaması için bir "Create" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Create" butonuna tıklandıktan sonra kullanıcı “Customer Info” Ekranına yönlendirmelidir.
+ 4.2. “Create” butonuna tıklandığında “E-mail” ve “Mobile Number” sistem girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini 
+ kontrol etmelidir. Girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda sistem, bir uyarı 
+ pop-up ekranı oluşturarak “A customer is already exist with this E-mail or Mobile Number” hata mesajını göstermelidir.
+ 
+
+Requirement 7:
+Summary: Müşteri bilgilerinin görüntülenebildiği ve güncellenebildiği "Customer Info" ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-6 içerisindeki sayfada "Create" butonuna veya CRM-3 içerisindeki sayfada "Customer ID" değerine tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-3 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının, var olan müşterinin "Customer Info", "Customer Account", "Address" ve "Contact Medium" bilgilerini görüntüleyebilmesi için bir bilgi ekranı oluşturulmalıdır.
+ 2.1. Bilgi ekranındaki sekmeler sırası ile "Customer Info", "Customer Account", "Address" ve "Contact Medium" olarak belirtilmelidir.
+ 2.2. Kullanıcı 2.1. içerisinde belirtilmiş 4 sekme arasında geçiş yapabilmelidir. 
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+3. Kullanıcının, demografik bilgilerinin görüntelenebildiği bir form ekranı oluşturulmalıdır.
+ 3.1. Kullanıcı form ekranı içerisindeki kutularının detaylı bilgisini ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+4. Kullanıcının müşteri bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Customer Info" sayfasında bir kalem ikonu oluşturulmalıdır.
+ 4.1. Kullanıcı, “Customer Info” ekranında bulunan kalem ikonuna tıkladığında, “Customer Info Update” ekranı açılmalıdır.
+ 4.2. “Customer Info Update” içerisindeki form ekranı girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+ Taslak ekran çizimi için tıklayınız
+ 4.3. “Customer Info Update” ekranı içerisinde kullanıcının değiştirmiş olduğu bilgilerin kayıt edilebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.4. “Customer Info Update” ekranı içerisinde kullanıcının bilgileri değiştirmeden çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır. Kullanıcı bu işlem için tekrardan kalem ikonuna da tıklayabilir.
+ 4.5. Kullanıcı tarafından “Customer Info Update” ekranı içerisinde girilen “Nationality ID” sistemde var olan müşteri verileri ile karşılaştırılarak, eşleşen bir kayıt olup olmadığı sorgulanmalıdır.
+  4.6.1. Eşleşen bir "Nationality ID" olması durumunda bir uyarı pop-up ekranı açılarak kullanıcıya “A customer is already exist with this Nationality ID” uyarı mesajı gösterilmelidir. Eğer benzer bir kayıt bulunmadıysa, 
+  müşteri kaydı güncellenmeli ve “Customer Info” sayfası açılmalıdır.
+ 4.6. Kullanıcı güncellendiğinde, sistem kullanıcıya atanmış olan tekil "Customer ID"yi değiştirmemelidir.
+5. Kullanıcının var olan müşteriyi silebilmesi için "Customer Info" sayfasında bir çöp kutusu ikonu oluşturulmalıdır.
+ 5.1. Kullanıcı, “Customer Info” sayfasında bulunan çöp kutusu ikonuna tıkladığında, “Are you sure to delete this customer?” onay popup’ı açılmalıdır.
+ 5.2. Kullanıcının onay vermesi durumunda, sistem müşterinin aktif bir ürünü bulunup bulunmadığını sorgulamalıdır. 
+  5.2.1. Müşterinin aktif bir ürünü bulunması halinde “Since the customer has active products, the customer cannot be deleted.” uyarı popup’ı açılmalıdır. 
+  5.2.2. Müşterinin aktif bir ürünü bulunmaması halinde müşteri silinmeli ve müşteri arama ekranı açılmalıdır. (CRM-3)
+Taslak ekran çizimi için tıklayınız.
+
+
+
+Requirement 8:
+Summary: Müşteri adres bilgilerinin görüntülenebildiği ve güncellenebildiği "Addresses" ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-6 içerisindeki sayfada "Create" butonuna veya CRM-3 içerisindeki sayfada "Customer ID" değerine tıklayarak "Customer Info" sayfasına geldiği ardından sekmelerden "Addresses"e tıkladığı varsayılmıştır.
+
+1. CRM-3 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. CRM-7 içerisinde belirtilmiş olan 2. madde bu ister için de geçerlidir. 
+3. Kullanıcının yeni bir adres oluşturabilmesi için "Add New Address" butonu oluşturulmalıdır. 
+ 3.1. "Add New Address" butonuna tıklandığında kullanıcının adres bilgilerinin girebileceği bir pop-up ekranı açılmalıdır.
+ Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+ 3.2. Adres bilgilerinin kullanıcı tarafından girilebilmesi için lokasyon seçim kutuları oluşturulmalıdır. Lokasyonlar, bu lokasyon seçim kutularında lokasyon adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+ 3.3. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+ 3.4. "Add New Address" butonu kaydedilmiş olan adresin yanında görüntülenebilmeli ve aktif olmalıdır.
+4. Adres Bilgi Ekranında kullanıcının kayıt etmiş olduğu adres görüntülenebilmeli. 
+Tasarım mockuptaki gibi olmalıdır.
+ 4.1. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+  4.1.1. Müşterinin tek bir adres kaydı olduğu durumda "Delete" kullanıma kapalı olmalıdır. İlgili buton sadece bir müşterinin iki veya daha fazla adresi kayıtlı olduğu durumda aktif hale gelmelidir.
+ 4.2. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilmelidir.
+ 4.3. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Set as Primary Address” butonuna basarak müşterinin birincil adresi olarak güncelleyebilmelidir.
+  4.3.1. Müşterinin tek bir adresi olduğu durumda Primary Address butonu pasif olmalıdır.
+
+
+
+Requirement 9:
+Summary: Müşteri adres bilgilerinin görüntülenebildiği ve güncellenebildiği "Addresses" ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-6 içerisindeki sayfada "Create" butonuna veya CRM-3 içerisindeki sayfada "Customer ID" değerine tıklayarak "Customer Info" sayfasına geldiği ardından sekmelerden "Contact Medium"a tıkladığı varsayılmıştır.
+
+1. CRM-3 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. CRM-7 içerisinde belirtilmiş olan 2. madde bu ister için de geçerlidir. 
+3. Kullanıcının, kontakt bilgilerinin görüntelenebildiği bir form ekranı oluşturulmalıdır.
+ 3.1. Kullanıcı form ekranı içerisindeki kutularının detaylı bilgisini ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+4. Kullanıcının müşteri kontakt bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Contact Medium" sayfasında bir kalem ikonu oluşturulmalıdır.
+ 4.1. Kullanıcı, “Contact Medium” ekranında bulunan kalem ikonuna tıkladığında, “Contact Medium Update” ekranı açılmalıdır.
+ 4.2. “Contact Medium Update” içerisindeki form ekranı girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+ Taslak ekran çizimi için tıklayınız
+ 4.3. Kullanıcının kontakt girdi kutularına girdiği verilerin geçersiz bir formatta olması halinde girdi kutusu belirgin hale getirilmeli (kırmızı highlight, stroke) ve ekranda "Your input must be in a valid format" uyarısı belirmeli.
+ Örnek mockuptaki gibi olmalıdır.
+ 4.4. “Contact Medium Update” ekranı içerisinde kullanıcının değiştirmiş olduğu bilgilerin kayıt edilebilmesi için bir "Save" butonu oluşturulmalıdır.
+ 4.5. “Contact Medium Update” ekranı içerisinde kullanıcının bilgileri değiştirmeden çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır. Kullanıcı bu işlem için tekrardan kalem ikonuna da tıklayabilir.
+ 4.6. “Save” butonuna tıklandığında “E-mail” ve “Mobile Number” sistem girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini 
+ kontrol etmelidir. Girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda sistem, bir uyarı 
+ pop-up ekranı oluşturarak “A customer is already exist with this E-mail or Mobile Number” hata mesajını göstermelidir.
+
+
+Requirement 10:
+Summary: Müşteri fatura bilgilerinin görüntülenebildiği, güncellenebildiği ve yaratılabildiği "Customer Account" ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-6 içerisindeki sayfada "Create" butonuna veya CRM-3 içerisindeki sayfada "Customer ID" değerine tıklayarak "Customer Info" sayfasına geldiği ardından sekmelerden "Customer Account"a tıkladığı varsayılmıştır.
+
+1. CRM-3 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. CRM-7 içerisinde belirtilmiş olan 2. madde bu ister için de geçerlidir.
+3. Müşterinin herhangi bir faturası hesabı bulunmuyorsa, kullanıcı herhangi bir tablo görüntülememelidir. 
+4. Sistemde tanımlı fatura hesap detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan accountDetay.xlsx dosyasında bulabilirsiniz.
+5. Kullanıcının yeni bir fatura hesabı yaratması için “Create New Account” butonu oluşturulmalıdır.
+ 5.1. “Create New Account” butonuna tıklandığında “Create Billing Account” ekranı açılmalıdır.
+  5.1.1. “Create Billing Account” ekranında hesap bilgilerinin girebileceği bir form ekranı oluşturulmalıdır.
+  5.1.2. Hesap form ekranı içerisindeki girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan faturaDetay.xlsx dosyasında bulabilirsiniz.
+  5.1.3. Fatura adres bilgilerinin girilebilmesi için oluşturulacak alan CRM-5 fonksiyonel isteri gibi olmalıdır.
+  5.1.4. Adres bilgi alanında müşterinin kayıtlı adresinin seçilebilmesi için "Select Registered Address" butonu oluşturulmalıdır.
+   5.1.4.1. "Select Registered Address" butonuna tıklandığında  müşterinin hesabında kayıtlı adreslerinin tamamının görüntülendiği bir pop-up ekranı açılmalıdır.
+   5.1.4.2. Açılan kayıtlı adresler pop-upında istenilen adrese tıklanarak seçim yapılabilmelidir.
+  5.1.5. “Create Billing Account” ekranı içerisinde kullanıcının girmiş olduğu bilgiler ile fatura hesabı oluşturabilmesi için bir "Create" butonu oluşturulmalıdır.
+  5.1.6. “Create Billing Account” ekranı içerisinde kullanıcının fatura hesabı oluşturmadan çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır.
+6. Kullanıcının fatura hesap bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Customer Account" sayfasında fatura hesapları yanında kalem ikonu oluşturulmalıdır.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 6.1. Kullanıcı, “Customer Account” ekranında bulunan kalem ikonuna tıkladığında, “Update Billing Account” ekranı açılmalıdır. 
+  6.1.1. “Update Billing Account” ekranında bulunacak alanlar, güncellenmek istenen fatura hesabının bilgileriyle dolu şekilde gelmelidir.
+  6.1.2. Gösterilecek alanlar “Create Billing Account” ekranı ile aynı olmalıdır. 
+  6.1.3. Kullanıcı gerekli bilgileri güncelleyip “Save” butonuna tıkladığında, fatura hesabı güncellenmelidir.
+7. Kullanıcının fatura hesap bilgilerini silebilmesi için "Customer Account" sayfasında fatura hesapları yanında çarpı ikonları oluşturulmalıdır.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 7.1. Kullanıcı, “Customer Account” ekranında bulunan “çarpı” ikonuna tıkladığında, “Are you sure to delete this billing account?” uyarı pop-up ekranı açılmalıdır. 
+  7.1.1. Uyarı pop-up ekranında kullanıcının onay verebilmesi için bir "Yes" butonu oluşturulmalıdır.
+  7.1.2. Uyarı pop-up ekranında kullanıcının silme işlemini iptal edebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+  7.1.3. Kullanıcı “Yes” butonuna tıkladığında sistem, ilgili fatura hesabına bağlı bir ürün olup olmadığını sorgulamalıdır. 
+   7.1.3.1. Ürün sorgulanması sonucunda fatura hesabında ürün bulunur ise "Due to existance of product/s, this billing account can not be deleted" uyarı pop-up'ı açılmalı ve fatura hesabı silme işlemi gerçekleştirilmemelidir.  
+   7.1.3.2. Ürün sorgulanması sonucunda fatura hesabında ürün bulunmamış ise fatura hesabı silinmeli ve kullanıcıya “Billing account deleted successfully” bilgi pop-up’ı açılmalıdır.
+8. Fatura hesabına bağlı olan ürünlerin gösteriminin yapılabilmesi için her bir satırda yukarı/aşağı yönlü ok kullanılmalıdır. Butona tekrar tıklandığında gösterim gizlenmelidir. 
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 8.1. Her bir faturaya bağlı ürünler, fatura hesabının detayında bulunan tablo içerisinde görüntülenecektir. Sistemde tanımlı fatura ürün detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan faturaUrunDetay.xlsx dosyasında bulabilirsiniz.
+ 8.2. Kullanıcının ürün iptal edebilmesi için ürün bilgileri tablosundaki action sütununda her ürün satırında bir silme ikonu oluşturulmalıdır.
+  8.2.1. Silme ikonuna tıklandığında ürün iptali süreci başlatılmalıdır. Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 8.3. Kullanıcının ürün detay bilgisini görüntüleyebilmesi için ürün bilgileri tablosundaki action sütununda her ürün satırında bir göz ikonu oluşturulmalıdır.
+  8.3.1. Göz ikonuna tıklandığında ilgili ürünün detay bilgileri bir modal ekranda açılmalıdır. Sistemde tanımlı ürün detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan urunDetay.xlsx dosyasında bulabilirsiniz.
+  Tasarım aşağıdaki mockup gibi olmalıdır.
+ 8.4. Kullanıcının gösterilen ürünlerin bir veya birden fazlasını seçebilmesi için her ürün satırında bir tik kutusu oluşturulmalıdır.
+  8.4.1. Fatura detayındaki her ürünün aynı anda seçilebilmesi için tablo başlıklarının yanında bir tik kutusu oluşturulmalıdır.
+ 8.5. Kullanıcının seçilen ürünlerin transferini yapabilmesi için bir "Transfer" butonu oluşturulmalıdır. Ürün seçimi yapılmadığında bu buton pasif olmalıdır.
+ Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 8.6. Kullanıcının seçilen ürünlerin servis adres değişikliğini yapabilmesi için bir "Service Adress Change" butonu oluşturulmalıdır. Ürün seçimi yapılmadığında bu buton pasif olmalıdır.
+ Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 8.7. Kullanıcının yeni bir satış gerçekleştirebilmesi için  "Start New Sale" butonu oluşturulmalıdır.
+  8.7.1. Kullanıcı, “Start New Sale” butonuna tıkladığında “Offer Selection” ekranı açılmalıdır.
+
+
+Varsayım 1: Kullanıcının CRM-16 'yı tamamladığı varsayılmıştır.
+
+1. Katalog üzerinden ürün ve/veya kampanya seçilebilmesi için alan oluşturulmalıdır.
+ 1.1 Katalog ve Kampanya seçim ekranları ayrı sekmeler ile gösterilmelidir.
+2. Katalog ekranında katalogların seçilebilmesi ve listelenmesi için bir seçim kutusu oluşturulmalıdır.
+ 2.1 Select seçim kutusuna tıklandığında kullanıcı, sistemde tanımlı bütün kataloglara erişebilmelidir.
+ 2.2 Select seçim kutusu açıldığında ilk olarak son eklenen 10 katalog görüntülenmelidir. Daha fazla katalog olması halinde seçim kutusu içeriği mouse tekerleği ile aşağı kaydırılabilir olmalıdır.  
+ 2.3 Select seçim kutusu içerisinden bir seçim yapıldığında ürün teklif id'leri ve ürün teklif isimleri katalog ekranı içerisinde bir tabloda gösterilmelidir.
+ 2.4 Kullanıcının ürün seçim tablosunda ürün teklif id ve/veya ürün teklif ismine göre arama yapabilmesi için girdi kutuları oluşturulmalıdır.
+  2.4.1 Doldurulan ürün teklif id ve ürün teklif ismi girdi kutularına göre arama yapılabilmesi için bir "search" butonu oluşturulmalıdır.
+  2.4.2 Search butonuna tıklandığında ilgili ürün, ürün seçim tablosunda listelenmelidir.
+ 2.5 Kullanıcı tarafından sepete eklenecek ürünler ürün seçim tablosu içerisinden tek tek seçilebilir ve sepete aktarılabilir olmalıdır.
+  2.5.1 Kullanıcı ürünleri sepete aktarırken aynı anda birden fazla ürün seçilebilir olmamalıdır.
+3. Kampanya ekranında kampanyaların seçilebilmesi ve listelenmesi için bir seçim kutusu oluşturulmalıdır.
+ 3.1 Select seçim kutusuna tıklandığında kullanıcı, sistemde tanımlı bütün kampanyalara erişebilmelidir.
+ 3.2 Select seçim kutusu açıldığında ilk olarak son eklenen 10 kampanya görüntülenmelidir.
+ Daha fazla kampanya olması halinde seçim kutusu içeriği mouse tekerleği ile aşağı kaydırılabilir olmalıdır.
+ 3.3 Select seçim kutusu içerisinden bir seçim yapıldığında kampanya id, ürün teklif id ve ürün teklif isimleri kampanya ekranı içerisinde bir tabloda gösterilmelidir.
+ 3.4 Kullanıcının kampanya seçim tablosunda kampanya id ve/veya kampanya ismine göre arama yapabilmesi için girdi kutuları oluşturulmalıdır.
+  3.4.1 Doldurulan kampanya id ve kampanya ismi girdi kutularına göre arama yapılabilmesi için bir "search" butonu oluşturulmalıdır.
+  3.4.2 Search butonuna tıklandığında ilgili kampanya, kampanya seçim tablosunda listelenmelidir.
+ 3.5 Kullanıcı tarafından sepete eklenecek kampanyalar, kampanya seçim tablosu içerisinden tek tek seçilebilir ve sepete aktarılabilir olmalıdır.
+  3.5.1 Kullanıcı kampanyaları sepete aktarırken aynı anda birden fazla kampanya seçilebilir olmamalıdır.
+4. Seçilen ürünler ve/veya kampanyaların sepete aktarılabilmesi için "add to basket" butonu oluşturulmalıdır.
+ 4.1 Ürün veya kampanya seçildikten sonra "Add to Basket" butonuna tıklandığında seçilen ürün veya kampanya ilgili sepet bilgi ekranında gösterilmelidir.
+5. Sepete eklenen ürünlerin ve/veya kampanyaların bilgilerinin yeni ürün satışı ekranında gösterilebilmesi için bir sepet bilgi ekranı oluşturulmalıdır. 
+ 5.1 Sepete eklenen ürünlerin id'leri, isimleri ve sistemde tanımlı fiyatları sepet ekranında gösterilmelidir.
+  5.1.1 Sepete eklenen kampanyalar için sepet bilgi ekranında gösterilen ürün bilgilerine ek olarak kampanya id'si de sepet bilgi ekranı içerisinde gösterilmelidir.
+ 5.2 Kullanıcı tarafından sepete eklenmiş olan ürünler ve/veya kampanyaların fiyatlarının toplam değeri sepet bilgi ekranı içerisinde gösterilmelidir.
+ 5.3 Kullanıcının sepete eklenmiş olan bütün ürünleri ve/veya kampanyaları sepetten temizleyebilmesi için bir "Clear" butonu oluşturulmalıdır.
+  5.3.1 Sepet Bilgi Ekranı içerisinde herhangi bir sepet içeriği olmaması halinde “Clear” butonu tıklanamaz olmalıdır.
+ 5.4 Kullanıcının sepete eklenmiş olan ürünleri ve/veya kampanyaları sepetten tek tek temizleyebilmesi için her bir sepet içeriğinin yanında bir "-" ikonu oluşturulmalıdır.
+6. Kullanıcının sepette bulunan içeriklerle satış işlemine devam edebilmesi için bir "next" butonu oluşturulmalıdır.
+ 6.1 Sepette herhangi bir içerik bulunmaması halinde "next" butonu tıklanamaz olmalıdır.
+ 6.2 Kullanıcı "next" butonuna tıkladığında "Product Configuration" sayfası açılmalıdır.
+
+
+
+Requirement 12:
+Summary: Ürün Konfigürasyon ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-17 'yi tamamladığı varsayılmıştır.
+
+1. Kullanıcı Ürün Konfigürasyon ekranında CRM-17 içerisinde sepete eklemiş olduğu içeriklerin tamamını görüntüleyebilmelidir.
+ 1.1. Her ürün için karakteristik özelliklerin görüntülenebileceği ve karakteristik özelliklerin görüntülendiği ekranda bilgiler sistemde kayıtlı olan ürünlere özel olarak görüntülenmelidir.
+ 1.2. Sisteme her ürün için tanımlı bilgiler, doldurulması zorunlu alanlar, girdi kutu isimleri, girdi kutu tipleri ve girdi yapılabilecek veri tipleri ekte bulunan configurationDetay.xlsx dosyasından bulunabilir.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ 1.3. Sepet içeriklerinin gösterildiği Konfigürasyon ekranında sepet içeriği ve bilgilerinin sayfa boyutuna sığmaması durumunda kullanıcı fare tekerleği yardımı ile sayfayı aşağıya kaydırabilmelidir.
+2.  Kullanıcının satış işlemini tamamlaması için konfigürasyon ekranında servis adresinin seçilebileceği bir alan oluşturulmalıdır.
+ 2.1. Adres seçim alanı içerisinde müşterinin kayıtlı adresleri görüntülenebilmelidir. 
+ 2.2. Kullanıcı istediği takdirde kayıtlı adreslerden birini seçebilmeli veya yeni bir adres ekleyebilmelidir. 
+  2.2.1. Konfigürasyon Ekranında müşteriye kayıtlı adreslerden iki adres bilgisi görüntülenebilmeli.
+  2.2.2. Müşteriye kayıtlı ikiden fazla adres olması halinde adres alanının sağında ve solunda "ok" ikonu oluşturulmalıdır. Kullanıcı "ok" ikonlarına tıkladığında diğer müşteriye kayıtlı adresleri de görüntüleyebilmelidir.
+  Tasarım aşağıdaki mockup gibi olmalıdır.  
+ 2.3. Kullanıcının yeni bir adres ekleyebilmesi için "Add New Address" butonu oluşturulmalıdır.
+ 2.4. Kullanıcı "Add New Address" butonuna tıkladığında adres girişinin yapılabileceği bir pop-up açılmalıdır.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+  2.4.1. Adres bilgilerinin kullanıcı tarafından girilebilmesi için lokasyon seçim kutuları oluşturulmalıdır. Lokasyonlar, bu lokasyon seçim kutularında lokasyon adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+  2.4.2. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+  2.4.3. Kullanıcının yeni bir adres eklemeden pop-up'ı kapatabilmesi için bir "Cancel" butonu oluşturulmalıdır.
+ 2.5. Kaydedilen adres adres bilgi ekranında görüntülenmeli ve "Add New Address" butonu kaldırılmalıdır.
+ 2.6. Gösterilen adreslerde seçim veya düzenleme işlemlerinin gerçekleştirebilmesi için adres alanlarında "Üç Nokta" ikonu oluşturulmalıdır.
+  2.6.1. Kullanıcı seçmek istediği servis adresini, adres alanı içerisindeki adreslerden herhangi birine tıklayarak veya "Üç Nokta" ikonu içerisinden "Select Address" butonuna tıklayarak seçebilir. 
+  2.6.2. Kullanıcı adres seçimini iptal etmek istediğinde, seçmiş olduğu adresin üstüne tıklayarak veya "Üç Nokta" içerisinden "Select Address" butonuna tekrar tıkladığında adres seçimini iptal edebilir.
+  2.6.3. Kullanıcı, kayıtlı adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+   2.6.3.1. Müşterinin tek bir adres kaydı olduğu durumda "Delete"  butonu kullanıma kapalı olmalıdır. İlgili buton sadece bir müşterinin iki veya daha fazla adresi kayıtlı olduğu durumda aktif hale gelmelidir.
+  2.6.4. Kullanıcı, kayıtlı adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilmelidir.
+3. Kullanıcının Konfigürasyon ekranından CRM-17'de yapılmış olan Teklif Seçimi ekranına geri dönebilmesi için bir "Previous" butonu oluşturulmalıdır.
+4. Kullanıcının satış işlemine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı, “Next” butonuna tıkladığında “Submit Order” ekranı açılmalıdır.
+
+
+
+Requirement 13:
+Summary: Siparişin Tamamlama ekranının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-18 'i tamamladığı varsayılmıştır.
+
+1. Kullanıcının CRM-18'de oluşturulmuş ürün konfigürasyon özet bilgilerin gösterileceği bir alan oluşturulmalıdır.
+ 1.1. Gerçekletirilecek sipariş için sistem tarafından otomatik olarak tekil bir sipaiş numarası oluşturulmalı ve Özet Bilgi ekranında "Order ID" olarak gösterilmelidir.
+ 1.2. Kullanıcı tarafından konfigüre edilmiş ürünler ve/veya kampanyalar Özet Bilgi ekranında "Order Items" olarak gösterilmelidir.
+ 1.3. Kullanıcı tarafından Ürün Konfigürasyonu(CRM-18) ekranında seçilmiş olan adres, "Service Address" olarak Özet Bilgi ekranında gösterilmelidir. 
+ 1.4. Kullanıcı tarafından Teklif Seçim ekranında (CRM-16) sepete eklenmiş olan ürünler ve/veya kampanyaların fiyatlarının toplam değeri Özet Bilgi Ekranı içerisinde "Total Amount" olarak gösterilmelidir.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+2. Kullanıcının Sipariş Tamamlama ekranından CRM-18'de yapılmış olan Ürün Konfigürasyon ekranına geri dönebilmesi için bir "Previous" butonu oluşturulmalıdır.
+3. Kullanıcının satış işlemini tamamlayabilmesi için bir "Submit" butonu oluşturulmalıdır.
+ 3.1. Kullanıcı, "Submit" butonuna tıkladığında kullanıcı onay vermesi için "Would you like to submit this order?" ibaresi ile bir pop-up ekranı açılmalıdır.
+  3.1.1. Kullanıcının satışı tamamlamadan pop-up ekranını kapatabilmesi için "Cancel" butonu oluşturulmalıdır.
+  "Cancel" butonuna tıklandığında onay pop-up ekranı kapatılmalı ve Sipariş Tamamlama ekranı gösterilmelidir.
+  3.1.2. Kullanıcının satış işlemini tamamlaması için onay pop-up ekranı içerisinde bir "Yes" butonu oluşturulmalıdır.
+  Kullanıcı, “Yes” butonuna tıkladığında sipariş onaylanıp, orta katmana geçilmelidir.
+**** Sorulmalı *****
+
+Kullanıcı, submit ekranında, konfigüre edilmiş ürünlerin detaylarını görüntüleyebilecektir. Previous butonuna tıklandığında “product configuration” ekranı açılacak. Submit butonuna bastığında sipariş orta katmana geçilecektir.
+
+
+
+Reset Password oluşturulmalı.
+Hangi alanların hangi formatta olduğu ve doldurulma zorunluluğu belirtilmelidir. 
+pop-up kapatabilme özelliği
+Bu alanlar istendi yanlış isterde CRM-3
+
+Layout oluşturulması ve layouta referans verilmeli.
+Adresler ekrana sığmadığnda scroll olmalı veya 4 ile sınırlandırılabilr. 
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------
+
+CRM-2 Use-Case
+Ön Koşullar:		Sistem giriş sayfasının tarayıcıda açılması
+Beklenen Çıktı: 	Kullanıcı müşteri arama sayfasına yönlendirilir.
+Ana Senaryo :
+	Adım 1 	Kullanıcı, kullanıcı adı ve şifresini girer.
+	Adım 2 	Kullanıcı, login butonuna tıklar
+	Adım 3 	Sistem, girilen kullanıcı adı ve şifreyi kontrol eder
+	Adım 4 	Sistem, girilen kullanıcı adı ve şifrenin doğru olduğunu belirler.
+	Adım 5 	Sistem, kullanıcıyı müşteri arama ekranına yönlendirir.
+Alternatif Senaryo:
+ 	Adım 4.1	Sistem, girilen kullanıcı adı ve şifrenin doğru olmadığını belirler
+	Adım 4.2	Sistem kullanıcıya “Wrong user name or password. Please try again” uyarı mesajını gösterir.
+
+
+
+CRM-3 Use-Case 1
+Ön Koşullar:		Kullanıcının CRM-2 Story'sindeki işlemleri tamamladığı ve filtreleme sayfasına geldiği
+Beklenen Çıktı: 	Müşteri bilgilerinin gösterilmesi
+Ana Senaryo:
+ 	Adım 1 	Kullanıcı arama kriterlerinden birini doldurur
+	Adım 2 	Sistem, “Search” butonunu çalışır kılar
+	Adım 3 	Kullanıcı “Search” butonuna tıklar.
+	Adım 4 	Sistem, girilen alanlarla tam olarak eşleşen kayıtları sorgular.
+	Adım 5 	Sistem, bulunan müşterileri listeler.
+	Adım 6 	Kullanıcı, listeden bir müşterinin kaydına tıklar.
+	Adım 7 	Sistem, müşteri bilgilerinin gösterildiği sayfayı açar.
+Alternatif Senaryo:
+ 	Adım 4.1	Sistem, “No customer found! Would you like to create the customer?” uyarı mesajını gösterir.
+	Adım 4.2	Adım 1’e dön.
+
+
+CRM-3 Use-Case 2
+Ön Koşullar:		Kullanıcının CRM-2 Story'sindeki işlemleri tamamladığı ve filtreleme sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin demografik bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1		Kullanıcı müşteri arama sayfasındaki "Create Customer" butonuna tıklar.
+Alternatif Senaryo:
+ 	Adım 1.1	Kullanıcı arama kriterlerini girerek "Search" butonuna tıklar
+	Adım 1.2	Kullanıcı müşteri bulunamaması sonucunda çıkan pop-up ekranında “Create Customer” butonuna tıklar.
+	Adım 1.3 	Sistem, demographic info sayfasını açar.
+
+	
+	
+CRM-4 Use-Case
+Ön Koşullar:		Kullanıcının CRM-3 Story'sindeki işlemleri tamamladığı ve demografik bilgiler sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin adres bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1 		Kullanıcı zorunlu alanları girerek “Next” butonuna tıklar.
+	Adım 2		Sistem, girilen “Nationality ID” alanının tekilliğini kontrol eder.
+	Adım 3		Sistem, adres bilgisi sayfasını açar.
+Alternatif Senaryo:
+	Adım 2.1	Sistem, girilen “Nationality ID” değerinin tekil olmaması durumunda “A customer is already exist with this Nationality ID” hata mesajını gösterir.
+	Adım 2.2	Adım 1'e geri dön.
+	
+	
+CRM-5 Use-Case
+Ön Koşullar:		Kullanıcının CRM-4 Story'sindeki işlemleri tamamladığı ve adres bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin kontakt bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1 		Kullanıcı, “Add New Address” butonuna basar.
+	Adım 2		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3		Kullanıcı zorunlu alanları girerek “Save” butonuna basar.
+	Adım 4		Sistem, girilen bilgilerle adres bilgisini kaydederek modal ekranı kapatır ve “next” butonunu çalışır kılar.
+	Adım 5		Kullanıcı, next butonuna basar.
+	Adım 6		Sistem, “Contact Medium” ekranını açar.
+Alternatif Senaryo: (Adımlar arası boşluklar, adımların farklı senaryolar olduğunu gösterir.)*
+	Adım 5.1	Kullanıcı, kayıt etmiş olduğu adreste değişiklik yapabilmek için üç noktadan "Edit" butonuna tıklar.
+	Adım 5.2	Kullanıcı gerekli alanları değiştirdikten sona “Save” butonuna basar.
+	Adım 5.3	Adım 4'e dön.
+	Adım 5.4	Kullanıcı, kayıt etmiş olduğu adresi silebilmek için üç noktadan "Delete" butonuna tıklar.
+	Adım 5.5	Sistem seçilmiş olan kayıtlı adresi siler.
+	Adım 5.6	Adım 1'e dön.
+	Adım 5.7	Kullanıcı, yeni bir adres girişi yapabilmek için “Add new address” butonuna basar.
+	Adım 5.8	Adım 2'ye dön.
+	Adım 5.9	Kullanıcı, yeni bir adres girişi yapabilmek için “Add new address” butonuna basar.
+	Adım 5.10	Adım 2'ye dön.
+	Adım 5.11	Kullanıcı, kayıt etmiş olduğu adresi silebilmek için üç noktadan "Delete" butonuna tıklar.
+	Adım 5.12	Sistem seçilmiş olan kayıtlı adresi siler.
+	Adım 5.13	Adım 4'e dön.
+
+
+CRM-6 Use-Case
+Ön Koşullar:		Kullanıcının CRM-5 Story'sindeki işlemleri tamamladığı ve kontakt bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin yaratılması
+Ana Senaryo:
+ 	Adım 1		Kullanıcı, zorunlu alanları girerek “Create” butonuna basar.
+	Adım 2		Sistem, girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini kontrol eder.
+	Adım 3		Sistem, kullanıcıyı yaratır.
+	Adım 4		Sistem, kullanıcıyı, müşterinin bilgilerinin gösterildiği “Customer Info” sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 1.1	Sistem, "E-mail" ve "Mobile Number" alanlarının doğru formatta yazılmadığını belirler.
+	Adım 1.2	Kullanıcı zorunlu alanların birini veya hepsini boş bırakarak "Create" butonuna tıklar.
+	Adım 1.3	Sistem, "E-mail and Mobile Number areas can not be empty!" hata mesajını gösterir.
+	Adım 2.1	Sistem, girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda “A customer is already exist with this E-mail or Mobile Number” hata mesajını gösterir.
+	Adım 2.2	Adım 1'e dön.
+	
+
+CRM-6 Use-Case
+Ön Koşullar:		Kullanıcının CRM-6 Story'sindeki işlemleri tamamladığı veya CRM-3 içerisinden “Customer ID” ye tıklatarak Müşteri Bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşteri bilgilerinin güncellenmesi
+Ana Senaryo:
+ 	Adım 1 	        Kullanıcı, müşteri bilgileri sayfasında bulunan kalem işaretine tıklar.
+        Adım 2 	        Sistem, “Customer Info Update” sayfasını açar.
+        Adım 3 	        Kullanıcı, güncellemek istediği alanlara tıklayarak “Save” butonuna tıklar.
+        Adım 4 	        Sistem, girilen “Nationality ID” alanının tekilliğini kontrol eder.
+        Adım 5 	        Sistem, kullanıcıyı günceller.
+        Adım 6 	        Sistem, kullanıcıyı, müşterinin bilgilerinin gösterildiği “Customer Info” sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 2.1  	Kullanıcı, “Customer Info Update” sayfasında “Cancel” butonuna tıklar.
+        Adım 2.2 	        Sistem, “Customer Info” sayfasını açar.
+
+        Adım 4.1          Sistem, girilen “Nationality ID” değerinin tekil olmaması durumunda “A customer is already exist with this Nationality ID” hata mesajını gösterir.
+        Adım 4.2  	Adım 3’e dön.
+
+
+
+
+CRM-13 Use-Case 2
+Ön Koşullar:		Kullanıcının CRM-6 Story'sindeki işlemleri tamamladığı veya CRM-3 içerisinden “Customer ID” ye tıklatarak Müşteri Bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin Silinmesi
+Ana Senaryo:
+	Adım 1	 	Kullanıcı, müşteri bilgileri sayfasında bulunan çöp kutusu işaretine tıklar.
+	Adım 2		Sistem, "Are you sure to delete this customer?" uyarı pop-up'ını açar.
+	Adım 3		Kullanıcı "Delete" butonuna basarak onay verir.
+	Adım 4 		Sistem, müşterinin fatura hesabı/hesapları altında aktif bir ürün olup olmadığını sorgular.
+	Adım 5 		Sistem, müşteri kaydını siler.
+	Adım 6 		Sistem, kullanıcıyı müşteri arama sayfasına yönlendirir.
+Alterntif Senaryo:
+	Adım 3.1	Kullanıcı "Cancel" butonuna basar.
+	Adım 3.2	Sistem, “Customer Info” sayfasını açar.
+	
+	Adım 4.1  	Müşterinin aktif bir ürünü olması halinde, Sistem, “Since the customer has active products, the customer cannot be deleted.” uyarı mesajını gösterir.
+    Adım 4.2	Sistem, “Customer Info” sayfasını açar.

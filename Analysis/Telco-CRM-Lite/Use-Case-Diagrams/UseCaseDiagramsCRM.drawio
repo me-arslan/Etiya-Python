@@ -1,0 +1,903 @@
+<mxfile host="app.diagrams.net" modified="2022-12-28T13:06:34.302Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" etag="8o7_NTTBTrFXnCu5GrMj" version="20.7.4" type="github">
+  <diagram id="ET5Hn8V05vsVDeW5QQIa" name="Page-1">
+    <mxGraphModel dx="2206" dy="3288" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-1" value="Yeni Müşteri Fatura Hesabı Oluşturulması" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="610" width="830" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-2" value="Yeni Müşteri Fatura Hesabının Silinmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1550" width="830" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-3" value="Yeni Ürün Satışının Gerçekleştirilmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="3130" width="830" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-4" value="Müşteri Fatura Hesabına Bağlı Ürün Detaylarını Görüntüleme" style="shape=umlFrame;whiteSpace=wrap;html=1;width=340;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1750" width="830" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-5" value="Müşterinin Demografik Bilgilerinin Eklenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=260;height=35;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1545" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-6" value="Müşterinin Adres Bilgilerinin Eklenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=260;height=35;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="11" y="-1360" width="830" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-7" value="Sisteme Giriş" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-2170" width="830" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-8" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-2115" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-9" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.5" y="-40" width="160" relative="1" as="geometry">
+            <mxPoint x="390" y="-2040" as="sourcePoint" />
+            <mxPoint x="390" y="-2000" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-10" value="Müşteri Arama" style="shape=umlFrame;whiteSpace=wrap;html=1;width=120;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1850" width="830" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-11" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-1810" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-12" value="Müşteri Arama" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="359" y="-1815" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-13" value="Müşteri Yaratma" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="163" y="-1680" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-14" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="130" y="-1775.5" as="sourcePoint" />
+            <mxPoint x="300" y="-1775" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-15" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4895" y="-16" width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="-1750" as="sourcePoint" />
+            <mxPoint x="270" y="-1690" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-16" value="Sisteme Giriş" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-1810" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-17" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="530" y="-1775" as="sourcePoint" />
+            <mxPoint x="630" y="-1775.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-18" value="Müşteri Bilgisi Görüntüleme" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="640" y="-1680" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-19" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.053" y="9" width="160" relative="1" as="geometry">
+            <mxPoint x="500" y="-1750" as="sourcePoint" />
+            <mxPoint x="630" y="-1680" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-20" value="Filtreleri Temizleme" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="390" y="-1680" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-21" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.5105" y="33" width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="-1730" as="sourcePoint" />
+            <mxPoint x="440" y="-1690" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-22" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="90" y="-1720" as="sourcePoint" />
+            <mxPoint x="150" y="-1650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="-1650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-23" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-1490" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-24" value="Demografik Bilgilerin Girilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-1490" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-25" value="Müşteri Yaratma" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-1490" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-26" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-1455.0000000000002" as="sourcePoint" />
+            <mxPoint x="550" y="-1455.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-1460.0000000000002" as="sourcePoint" />
+            <mxPoint x="250" y="-1460.0000000000002" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-1460" />
+              <mxPoint x="190" y="-1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-28" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="67" y="-1305" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-29" value="Yeni Adres Eklenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="272" y="-1305" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-30" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="447" y="-1270" as="sourcePoint" />
+            <mxPoint x="547" y="-1270.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="147" y="-1275" as="sourcePoint" />
+            <mxPoint x="247" y="-1275" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="187" y="-1275" />
+              <mxPoint x="187" y="-1275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-32" value="Demografik Bilgilerin Girilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="587" y="-1305" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-33" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="272" y="-1190" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-34" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="587" y="-1190" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-35" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="-50" width="160" relative="1" as="geometry">
+            <mxPoint x="337" y="-1230" as="sourcePoint" />
+            <mxPoint x="337" y="-1200" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-36" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.1233" y="-28" width="160" relative="1" as="geometry">
+            <mxPoint x="417" y="-1240" as="sourcePoint" />
+            <mxPoint x="577" y="-1180" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-37" value="Müşterinin Kontakt Bilgilerinin Eklenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=260;height=35;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1050" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-38" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-995" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-39" value="Kontakt Bilgilerin Girilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-995" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-40" value="Adres Bilgisi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-995" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-41" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-960" as="sourcePoint" />
+            <mxPoint x="550" y="-960.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-965" as="sourcePoint" />
+            <mxPoint x="250" y="-965" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-965" />
+              <mxPoint x="190" y="-965" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-43" value="Müşterinin Demografik Bilgilerinin Güncellenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-850" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-44" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-795" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-45" value="Müşteri Demografik Bilgilerinin &lt;br&gt;Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-795" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-46" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-795" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-47" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-760" as="sourcePoint" />
+            <mxPoint x="550" y="-760.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-765" as="sourcePoint" />
+            <mxPoint x="250" y="-765" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-765" />
+              <mxPoint x="190" y="-765" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-49" value="Müşterinin Demografik Bilgilerinin Silinmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-650" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-50" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-595" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-51" value="Müşteri Demografik Bilgilerinin &lt;br&gt;Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-595" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-52" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-595" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-53" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-560" as="sourcePoint" />
+            <mxPoint x="550" y="-560.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-565" as="sourcePoint" />
+            <mxPoint x="250" y="-565" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-565" />
+              <mxPoint x="190" y="-565" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-55" value="Müşteriye Yeni Adres Eklenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-460" width="830" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-56" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-405" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-57" value="Yeni Adres Eklenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-405" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-58" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-405" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-59" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-370" as="sourcePoint" />
+            <mxPoint x="550" y="-370.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-375" as="sourcePoint" />
+            <mxPoint x="250" y="-375" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-375" />
+              <mxPoint x="190" y="-375" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-61" value="Müşterinin Adres Bilgilerinin Güncellemesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-150" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-62" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-95" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-63" value="Adres Bilgisinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-95" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-64" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="-95" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-65" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="-60" as="sourcePoint" />
+            <mxPoint x="550" y="-60.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="-65" as="sourcePoint" />
+            <mxPoint x="250" y="-65" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="-65" />
+              <mxPoint x="190" y="-65" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-67" value="Müşterinin Adres Bilgilerinin Silinmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="40" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-68" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="95" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-69" value="Adres Bilgisinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="95" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-70" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="95" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-71" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="130" as="sourcePoint" />
+            <mxPoint x="550" y="129.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="125" as="sourcePoint" />
+            <mxPoint x="250" y="125" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="125" />
+              <mxPoint x="190" y="125" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-73" value="Müşterinin Adresinin Varsayılan Olarak Seçilmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="230" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-74" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="285" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-75" value="Varsayılan Adres Seçilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="285" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-76" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="285" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-77" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="319.99999999999955" as="sourcePoint" />
+            <mxPoint x="550" y="319.50000000000045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="314.99999999999955" as="sourcePoint" />
+            <mxPoint x="250" y="314.99999999999955" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="315" />
+              <mxPoint x="190" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-79" value="Müşterinin Kontakt Bilgilerinin Güncellemesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="420" width="830" height="165" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-80" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="475" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-81" value="Kontakt Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="475" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-82" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="475" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-83" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="509.99999999999955" as="sourcePoint" />
+            <mxPoint x="550" y="509.50000000000045" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="504.99999999999955" as="sourcePoint" />
+            <mxPoint x="250" y="504.99999999999955" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="505" />
+              <mxPoint x="190" y="505" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-85" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="665" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-86" value="Yeni Fatura Hesabı" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="230" y="665" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-87" value="Kayıtlı Müşteri" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="500" y="665" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-88" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="390" y="700.0799999999999" as="sourcePoint" />
+            <mxPoint x="490" y="699.5799999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="695" as="sourcePoint" />
+            <mxPoint x="220" y="695" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="695" />
+              <mxPoint x="190" y="695" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-90" value="Yeni Adres Oluşturulması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="135" y="880" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-91" value="Kayıtlı Adres Seçilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="555" y="880" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-92" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1030" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-93" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="250" y="1030" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-94" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4378" y="11" width="160" relative="1" as="geometry">
+            <mxPoint x="502.5" y="834.7600000000002" as="sourcePoint" />
+            <mxPoint x="620" y="870" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-95" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4769" y="24" width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="950" as="sourcePoint" />
+            <mxPoint x="320" y="1020" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-96" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4828" y="-30" width="160" relative="1" as="geometry">
+            <mxPoint x="130" y="950" as="sourcePoint" />
+            <mxPoint x="100" y="1020" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-97" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.2961" y="-8" width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="834.7600000000002" as="sourcePoint" />
+            <mxPoint x="220" y="870" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-98" value="Yeni Müşteri Fatura Hesabının Güncellenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=290;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="1180" width="830" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-99" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1225" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-100" value="Fatura Hesabı Güncelleme" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1225" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-101" value="Kayıtlı Müşteriye ait Fatura Bulunması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1225" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-102" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="1260" as="sourcePoint" />
+            <mxPoint x="550" y="1259.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="1255" as="sourcePoint" />
+            <mxPoint x="250" y="1255" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="1255" />
+              <mxPoint x="190" y="1255" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-104" value="Yeni Adres Oluşturulması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="205" y="1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-105" value="Kayıtlı Adresin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="650" y="1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-106" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1440" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-107" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="345" y="1440" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-108" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.3725" y="9" width="160" relative="1" as="geometry">
+            <mxPoint x="420" y="1280" as="sourcePoint" />
+            <mxPoint x="640" y="1350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-109" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.5" y="16" width="160" relative="1" as="geometry">
+            <mxPoint x="340" y="1410" as="sourcePoint" />
+            <mxPoint x="400" y="1430" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-110" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.6" y="-4" width="160" relative="1" as="geometry">
+            <mxPoint x="190" y="1400" as="sourcePoint" />
+            <mxPoint x="130" y="1430" as="targetPoint" />
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-111" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="-28" width="160" relative="1" as="geometry">
+            <mxPoint x="310" y="1300" as="sourcePoint" />
+            <mxPoint x="280" y="1330" as="targetPoint" />
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-112" value="Kayıtlı Adresin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="455" y="1340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-113" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="14" width="160" relative="1" as="geometry">
+            <mxPoint x="380" y="1300" as="sourcePoint" />
+            <mxPoint x="450" y="1350" as="targetPoint" />
+            <mxPoint x="2" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-114" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1600" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-115" value="Fatura Hesabını Silme" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1600" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-116" value="Kayıtlı Müşteriye ait Fatura Bulunması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1600" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-117" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="1635" as="sourcePoint" />
+            <mxPoint x="550" y="1634.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="1630" as="sourcePoint" />
+            <mxPoint x="250" y="1630" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="1630" />
+              <mxPoint x="190" y="1630" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-119" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="1800" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-120" value="İlgili Ürünün Detayını Görüntüleme&lt;br&gt;(Göz İkonu)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="1800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-121" value="Kayıtlı Müşteriye ait Fatura Bulunması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1930" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-122" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry y="40" width="160" relative="1" as="geometry">
+            <mxPoint x="640" y="1880" as="sourcePoint" />
+            <mxPoint x="640" y="1920" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="1830" as="sourcePoint" />
+            <mxPoint x="250" y="1830" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="1830" />
+              <mxPoint x="190" y="1830" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-124" value="İlgili Fatura Detayının Görüntülenmesi&lt;br&gt;(Ok İkonu)" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="1800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-125" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="1835" as="sourcePoint" />
+            <mxPoint x="550" y="1834.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-126" value="Ürünlerin ve/veya Kampanyaların Sepete Eklenmesi" style="shape=umlFrame;whiteSpace=wrap;html=1;width=340;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="2070" width="830" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-127" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2110" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-128" value="Sepete Ekle" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="2140" as="sourcePoint" />
+            <mxPoint x="250" y="2140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="2140" />
+              <mxPoint x="190" y="2140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-130" value="Ürün veya Kampanya Seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2220" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-131" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="40" width="160" relative="1" as="geometry">
+            <mxPoint x="345" y="2190" as="sourcePoint" />
+            <mxPoint x="345" y="2210" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-132" value="Kayıtlı Müşteriye ait Fatura Bulunması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="2360" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-133" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry y="40" width="160" relative="1" as="geometry">
+            <mxPoint x="345" y="2310" as="sourcePoint" />
+            <mxPoint x="345" y="2350" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-134" value="Katalog Ürün Teklifi Seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2220" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-135" value="Kampanya Ürün Teklifi Seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2220" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-136" value="Katalog Seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-137" value="Ürün Aratma" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="40" y="2460" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-138" value="Kampanya Seçimi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2340" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-139" value="Kampanya Aratma" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="510" y="2460" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-140" value="Sepet Temizleme" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="600" y="2110" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-141" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="45" width="160" relative="1" as="geometry">
+            <mxPoint x="110" y="2300" as="sourcePoint" />
+            <mxPoint x="110" y="2330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-142" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="45" width="160" relative="1" as="geometry">
+            <mxPoint x="109.71000000000004" y="2420" as="sourcePoint" />
+            <mxPoint x="109.71000000000004" y="2450" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-143" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="45" width="160" relative="1" as="geometry">
+            <mxPoint x="579.8600000000001" y="2300" as="sourcePoint" />
+            <mxPoint x="579.8600000000001" y="2330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-144" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="45" width="160" relative="1" as="geometry">
+            <mxPoint x="579.5700000000002" y="2420" as="sourcePoint" />
+            <mxPoint x="579.5700000000002" y="2450" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-145" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.25" y="-5" width="160" relative="1" as="geometry">
+            <mxPoint x="270" y="2255" as="sourcePoint" />
+            <mxPoint x="190" y="2255" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-146" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4286" width="160" relative="1" as="geometry">
+            <mxPoint x="429" y="2255" as="sourcePoint" />
+            <mxPoint x="499" y="2255" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-147" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="430" y="2139.7799999999997" as="sourcePoint" />
+            <mxPoint x="590" y="2139.7799999999997" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-148" value="Ürünlerin Konfigürasyonun Tamamlanması" style="shape=umlFrame;whiteSpace=wrap;html=1;width=340;height=30;boundedLbl=1;verticalAlign=middle;align=left;spacingLeft=5;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="10" y="2560" width="830" height="540" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-149" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="2610" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-150" value="Konfigürasyonun Tamamlanması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="240" y="2610" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-151" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="2640" as="sourcePoint" />
+            <mxPoint x="230" y="2640" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="2640" />
+              <mxPoint x="190" y="2640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-152" value="Sepette Ürün Bulunması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="488.75" y="2610" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-153" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="385" y="2645.2" as="sourcePoint" />
+            <mxPoint x="485" y="2644.7" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-154" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0943" y="30" width="160" relative="1" as="geometry">
+            <mxPoint x="370" y="2690" as="sourcePoint" />
+            <mxPoint x="410" y="2750" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-155" value="Kullanıcı" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="3180" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-156" value="Satışın Tamamlanması&lt;br&gt;&quot;Submit&quot;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="3180" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-157" value="Ürün Konfigürasyonu" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="570" y="3180" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-158" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="450" y="3215" as="sourcePoint" />
+            <mxPoint x="550" y="3214.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="3210" as="sourcePoint" />
+            <mxPoint x="250" y="3210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="190" y="3210" />
+              <mxPoint x="190" y="3210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-160" value="Kullanıcı Girişi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-2120" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-161" value="Şifre Sıfırlama" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="320" y="-1990" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-162" value="Kayıtlı Kullanıcı" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="650" y="-2125" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-163" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="470" y="-2085.53" as="sourcePoint" />
+            <mxPoint x="630" y="-2085.53" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-164" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="133" y="-2085.3" as="sourcePoint" />
+            <mxPoint x="303" y="-2084.8" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-165" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="275" y="-280" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-166" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="572.5" y="-280" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-167" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="1" y="-50" width="160" relative="1" as="geometry">
+            <mxPoint x="345" y="-320" as="sourcePoint" />
+            <mxPoint x="345" y="-290" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-168" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.1233" y="-28" width="160" relative="1" as="geometry">
+            <mxPoint x="410" y="-330" as="sourcePoint" />
+            <mxPoint x="562.5" y="-270" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-169" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="437.5" y="1030" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-170" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="682.5" y="1030" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-171" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.5543" y="24" width="160" relative="1" as="geometry">
+            <mxPoint x="700" y="950" as="sourcePoint" />
+            <mxPoint x="752.5" y="1020" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-172" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4769" y="-24" width="160" relative="1" as="geometry">
+            <mxPoint x="550" y="950" as="sourcePoint" />
+            <mxPoint x="510" y="1020" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-173" value="Adres Seçilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="352.5" y="800" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-174" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="html=1;verticalAlign=bottom;labelBackgroundColor=none;endArrow=open;endFill=0;dashed=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4" y="21" width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="740" as="sourcePoint" />
+            <mxPoint x="410" y="790" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-175" value="Yeni Adres Oluşturulması" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="131.25" y="2840" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-176" value="Kayıtlı Adres Seçilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="551.25" y="2840" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-177" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="26.25" y="2990" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-178" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="246.25" y="2990" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-179" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4378" y="11" width="160" relative="1" as="geometry">
+            <mxPoint x="498.75" y="2794.76" as="sourcePoint" />
+            <mxPoint x="616.25" y="2830" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-180" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4769" y="24" width="160" relative="1" as="geometry">
+            <mxPoint x="276.25" y="2910" as="sourcePoint" />
+            <mxPoint x="316.25" y="2980" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-181" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4828" y="-30" width="160" relative="1" as="geometry">
+            <mxPoint x="126.25" y="2910" as="sourcePoint" />
+            <mxPoint x="96.25" y="2980" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-182" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.2961" y="-8" width="160" relative="1" as="geometry">
+            <mxPoint x="336.25" y="2794.76" as="sourcePoint" />
+            <mxPoint x="216.25" y="2830" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-183" value="Adres Bilgilerinin Güncellenmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="433.75" y="2990" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-184" value="Adres Bilgilerinin Silinmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="678.75" y="2990" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-185" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.5543" y="24" width="160" relative="1" as="geometry">
+            <mxPoint x="696.25" y="2910" as="sourcePoint" />
+            <mxPoint x="748.75" y="2980" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-186" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;html=1;startArrow=open;endArrow=none;startSize=12;verticalAlign=bottom;dashed=1;labelBackgroundColor=none;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.4769" y="-24" width="160" relative="1" as="geometry">
+            <mxPoint x="546.25" y="2910" as="sourcePoint" />
+            <mxPoint x="506.25" y="2980" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hVDXQ7sKf-R2nnat_nsk-187" value="Adres Seçilmesi" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="348.75" y="2760" width="140" height="70" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

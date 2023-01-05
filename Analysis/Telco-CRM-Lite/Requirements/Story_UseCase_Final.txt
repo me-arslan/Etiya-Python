@@ -1,0 +1,772 @@
+Requirement 1: EA-14
+Summary: Kullanıcıların sisteme giriş yapabilmesi
+
+Acceptance Criterias:
+1. Kullanıcının, kullanıcı adı girebileceği bir girdi kutusu oluşturulmalıdır.
+ 1.1. Kullanıcının bu alanı doldurması zorunlu olmalıdır.
+2. Kullanıcının, şifre girebileceği bir girdi kutusu oluşturulmalıdır.
+ 2.1. Şifre girdi kutusu doldurulurken girilen şifre (*) gösterimi ile gizlenmelidir.
+ 2.2. Kullanıcının istediği takdirde girdiği şifreyi görebilmesi için şifreyi girdiği kutunun yanına bir göz butonu eklenmelidir.
+ 2.3. Kullanıcının bu alanı doldurması zorunlu olmalıdır.
+3. Kullanıcının girmiş olduğu bilgiler ile giriş yapabilmesi için "Login" butonu oluşturulmalıdır.
+4. Kullanıcı adı  ve şifre alanlarına girilen bilgilerin eksik veya hatalı olması durumunda veya kullanıcı adı-şifre uyumsuzluğu durumunda sistem “Wrong user name or password. Please try again” 
+uyarı mesajını ekranda pop-up olarak göstermelidir.
+ 4.1. Kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+5. Kullanıcı, şifresini sıfırlamak istediği durumda “Reset Password” butonuna tıklayabilmelidir.
+ 5.1. “Reset Password” butonuna tıklandığında, kullanıcı şifre sıfırlama sayfasına yönlendirilmelidir. Proje kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için bu iş etkileşimi bu döküman içerisinde tariflenmemiştir.
+6. Kullanıcı başarılı şekilde bilgileri doldurup "Login" butonuna tıkladığında müşteri arama sayfası açılmalıdır. (EA-15)
+
+Use-Case Senaryo: EA-30
+
+Requirement 2: EA-15
+Summary: Müşteri arama sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-14 Story'sindeki işlemleri tamamladığı ve Müşteri Arama sayfasına geldiği varsayılmıştır.
+
+1. Kullanıcının müşterileri filtreleyebilmesi için “Search Filter” isimli form ekranı oluşturulmalıdır.
+ 1.1. Müşteri arama sayfasında girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan musteriDetay.xlsx dosyasında bulabilirsiniz.
+ 1.2. Filtreleme form ekranı içerisindeki bilgilerin hepsi girdi kutusu olarak belirtilmelidir.
+ 1.3. Müşteri bilgileri için arama yapılırken aratılacak alanın içeriğinin tamamı yazılarak aratılabilmelidir. Örneğin; kullanıcı ismi aratılırken Nesibe için Nes yazdığında sonuç vermemeli ve kullanıcı Nesibe olarak arama yapmalıdır.
+  1.3.1. Büyük küçük harf duyarlılığı olmamalıdır.
+  1.3.2. Kullanıcı, arama yapmak istediğinde “Search Filter” alanından bir veya birden fazla alanı doldurup sistemde aratabilmelidir.
+ 1.4. Kullanıcının filtreleme form ekranında girdileri girdikten sonra aramayı yapabilmesi için bir "Search" butonu eklenmelidir.
+ 1.5. Bir veya birden fazla girdi girildikten sonra, Filtrelerin hepsinin aynı anda kaldırılabilmesi için bir "Clear" butonu oluşturulmalıdır.
+ 1.6. Kullanıcı, filtre alanlarından herhangi birini doldurana kadar “Search” ve "Clear" butonları pasif kalmalıdır.
+ 1.7. Kullanıcı filtreleme alanına gerekli bilgileri girip “search” butonuna bastığında, herhangi bir kayıt bulunmaması durumunda uyarı pop-up ekranı açılmalıdır, “No customer found! Would you like to create the customer?” uyarısı gösterilmeli ve “Create Customer” butonu oluşturulmalıdır.  
+  1.7.1. Kullanıcının pop-up'ı kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+  1.7.2. "Create Customer" butonuna tıklandığında kullanıcı, Demografik Bilgi sayfasına yönlendirmelidir. (EA-16)
+ 1.8. Kullanıcı filtreleme alanlarına gerekli bilgileri girip “Search" butonuna bastığında bulunan müşteri kayıtları bir tablo içerisinde gösterilmelidir.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+  1.8.1. Müşteri arama ekranda, ilgili sonuçların sistemde tanımlı veri tiplerini ekte bulunan searchDetay.xlsx dosyasında bulabilirsiniz.
+2. Filtreleme form ekranının yanında "Create Customer" butonu oluşturulmalıdır. 
+ 2.1. "Create Customer" butonuna tıklandığında kullanıcı, Demografik Bilgi sayfasına yönlendirmelidir. (EA-16)
+3. Kullanıcı, bulunan müşteri kayıtlarının gösterildiği listede, görüntülemeyi istediği müşterinin “Customer ID” değerine tıkladığında “Customer Info” sayfası açılmalıdır. (EA-20)
+
+Use-Case Senaryo 1: EA-32
+Use-Case Senaryo 1: EA-33
+
+
+Requirement 3: EA-16
+Summary: Demografik bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-15 içerisindeki sayfada "Create Customer" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. Kullanıcının, demografik bilgilerini girebileceği bir form ekranı oluşturulmalıdır.
+ 1.1. Kullanıcı form ekranı içerisindeki girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+3. Kullanıcının işlemi iptal edip EA-15'de yapılmış olan Müşteri Arama Sayfasına yönlendirilebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+4. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı tarafından Demografik Bilgi Sayfası içerisinde girilen “Nationality ID”, sistemde var olan müşteri verileri ile karşılaştırılarak, eşleşen bir kayıt olup olmadığı sorgulanmalıdır.
+  4.1.1. Eşleşen bir "Nationality ID" olması durumunda bir uyarı pop-up ekranı açılarak kullanıcıya “A customer is already exist with this Nationality ID” uyarı mesajı gösterilmelidir.
+  4.1.2. Kullanıcının pop-up'ları kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+ 4.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra, kullanıcı Yeni Müşteri Adres Bilgi sayfasına yönlendirmelidir. (EA-18) 
+
+Use-Case Senaryo: EA-34
+
+Requirement 4: EA-18
+Summary: Adres bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-16 içerisindeki sayfada "Next" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. Kullanıcının yeni bir adres oluşturabilmesi için "Add New Address" butonu oluşturulmalıdır. 
+ 1.1. "Add New Address" butonuna tıklandığında kullanıcının adres bilgilerinin girebileceği bir pop-up ekranı açılmalıdır.
+  1.1.1. Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+ 1.2. Şehir bilgisinin kullanıcı tarafından girilebilmesi için şehir açılır listesi(dropdown box) oluşturulmalıdır. 
+  1.2.1. Şehirler, bu şehir açılır listesinde şehir adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+  Tasarım aşağıdaki mockup gibi olmalıdır.
+ 1.3. Kullanıcının girmiş olduğu bilgiler ile adresi kayıt edebilmesi için "Save" butonu oluşturulmalıdır. 
+  1.3.1. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+ 1.4. "Add New Address" butonu kaydedilmiş olan adresin yanında görüntülenebilmeli ve aktif olmalıdır.
+2. Adres Bilgi Sayfasında kullanıcının kayıt etmiş olduğu adres görüntülenebilmeli. 
+ 2.1. Adres Bilgi Sayfasında müşteriye kayıtlı adreslerden iki adres bilgisi görüntülenebilmeli.
+  2.1.1. Müşteriye kayıtlı ikiden fazla adres olması halinde adres alanının sağında ve solunda "ok" ikonu oluşturulmalıdır. Kullanıcı "ok" ikonlarına tıkladığında müşteriye kayıtlı diğer adresleri de görüntüleyebilmelidir.
+ 2.2. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+ 2.3. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilecektir.
+3. Kullanıcının işlemi iptal edip EA-16 da yapılmış olan Demografik Bilgi sayfasına yönlendirilebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+4. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 5.1. Adres Bilgi Sayfası ilk açıldığında herhangi bir adres bilgisi girilmemiş olduğu için "Next" butonu pasif kalmalıdır.
+ 5.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra kullanıcı Müşteri Kontakt Bilgi sayfasına yönlendirmelidir. (EA-19)
+
+Use-Case Senaryo: EA-35
+
+Requirement 5: EA-19
+Summary: Kontakt bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-18 içerisindeki sayfada "Next" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. Kullanıcının kontakt bilgilerini doldurabileceği kontakt girdi kutuları oluşturulmalıdır. 
+ 1.1. Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+ 1.2. Kullanıcının kontakt girdi kutularına girdiği verilerin geçersiz bir formatta olması halinde, girdi kutusu belirgin hale getirilmeli (kırmızı highlight, stroke) ve ekranda "Your input must be valid." uyarısı belirmeli. 
+ Tasarım mockuptaki gibi olmalıdır.
+2. Kullanıcının işlemi iptal edip EA-18 de yapılmış olan Adres Bilgi sayfasına yönlendirilebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+3. Kullanıcının  sisteme o anda girdiği bilgiler ile müşteri oluşturma işlemini tamamlaması için bir "Create" butonu oluşturulmalıdır.
+ 3.1. “Create” butonuna tıklandığında “E-mail” ve “Mobile Number” alanlarının doldurulmamış olduğu durumda sistem, bir uyarı pop-up ekranı oluşturarak 
+ "E-mail and Mobile Number areas can not be empty!" hata mesajını göstermelidir. 
+  3.1.1. Kullanıcının pop-up'ı kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+ 3.2. “Create” butonuna tıklandığında “E-mail” ve “Mobile Number” sistem girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini kontrol etmelidir. 
+ Girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda sistem, bir uyarı pop-up ekranı oluşturarak 
+ “A customer is already exist with this E-mail or Mobile Number” hata mesajını göstermelidir. 
+  3.2.1. Kullanıcının pop-up'ı kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+ 3.3. “Create” butonuna tıklandığında yaratılan müşteri için sistem tarafından eşsiz bir “Customer ID” oluşturulmalıdır.
+ 3.4. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Create" butonuna tıklandıktan sonra kullanıcı “Customer Info” sayfasına yönlendirmelidir. (EA-20)
+
+Use-Case Senaryo: EA-36
+
+Requirement 6: EA-20
+Summary: Mevcut müşteri bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-19 içerisindeki sayfada "Create" butonuna veya EA-15 içerisindeki sayfada "Customer ID" değerine tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. Kullanıcının, var olan müşterinin "Customer Info", "Customer Account", "Address" ve "Contact Medium" bilgilerini görüntüleyebilmesi için bir bilgi ekranı oluşturulmalıdır.
+ 1.1. Bilgi ekranındaki sekmeler sırası ile "Customer Info", "Customer Account", "Address" ve "Contact Medium" olarak belirtilmelidir.
+ 1.2. Kullanıcı istediği sekmeye tıklarak 1.1. içerisinde belirtilmiş 4 sekme arasında geçiş yapabilmelidir. 
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+2. Kullanıcının, demografik bilgilerinin görüntelenebildiği bir form ekranı oluşturulmalıdır.
+ 2.1. Kullanıcı form ekranı içerisindeki kutularının detaylı bilgisini ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+3. Kullanıcının müşteri bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Customer Info" sayfasında bir kalem ikonu oluşturulmalıdır.
+ 3.1. Kullanıcı, “Customer Info” sayfasında bulunan kalem ikonuna tıkladığında, “Customer Info Update” ekranı açılmalıdır.
+ 3.2. “Customer Info Update” içerisindeki form ekranı girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ 3.3. “Customer Info Update” ekranı içerisinde kullanıcının değiştirmiş olduğu bilgilerin kayıt edilebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 3.4. “Customer Info Update” ekranı içerisinde kullanıcının bilgileri değiştirmeden çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır. Kullanıcı bu işlem için tekrardan kalem ikonuna da tıklayabilir.
+ 3.5. Kullanıcı tarafından “Customer Info Update” ekranı içerisinde girilen “Nationality ID” sistemde var olan müşteri verileri ile karşılaştırılarak, eşleşen bir kayıt olup olmadığı sorgulanmalıdır.
+  3.5.1. Eşleşen bir "Nationality ID" olması durumunda bir uyarı pop-up ekranı açılarak kullanıcıya “A customer is already exist with this Nationality ID” uyarı mesajı gösterilmelidir. 
+  Eğer benzer bir kayıt bulunmadıysa, müşteri kaydı güncellenmeli ve “Customer Info” sayfası açılmalıdır.
+ 3.6. Kullanıcı güncellendiğinde, sistem kullanıcıya atanmış olan tekil "Customer ID"yi değiştirmemelidir.
+4. Kullanıcının var olan müşteriyi silebilmesi için "Customer Info" sayfasında bir çöp kutusu ikonu oluşturulmalıdır.
+ 4.1. Kullanıcı, “Customer Info” sayfasında bulunan çöp kutusu ikonuna tıkladığında, “Are you sure to delete this customer?” onay popup’ı açılmalıdır.
+ 4.2. Kullanıcının onay vermesi durumunda, sistem müşterinin aktif bir ürünü bulunup bulunmadığını sorgulamalıdır. 
+  4.2.1. Müşterinin aktif bir ürünü bulunması halinde “Since the customer has active products, the customer cannot be deleted.” uyarı popup’ı açılmalıdır. 
+  4.2.2. Müşterinin aktif bir ürünü bulunmaması halinde müşteri silinmeli ve Müşteri Arama Sayfası açılmalıdır. (EA-15)
+
+Use-Case Senaryo 1: EA-38
+Use-Case Senaryo 2: EA-39
+
+Requirement 7: EA-21
+Summary: Mevcut müşteri adres bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-20 içeriğinde oluşturulmuş "Customer Info" sayfasına geldiği ardından sekmelerden "Addresses"e tıkladığı varsayılmıştır.
+
+1. Kullanıcının yeni bir adres oluşturabilmesi için "Add New Address" butonu oluşturulmalıdır. 
+ 1.1. "Add New Address" butonuna tıklandığında kullanıcının adres bilgilerinin girebileceği bir pop-up ekranı açılmalıdır.
+  1.1.1. Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+ 1.2. Şehir bilgisinin kullanıcı tarafından girilebilmesi için şehir açılır listesi(dropdown box) oluşturulmalıdır. 
+  1.2.1. Şehirler, bu şehir açılır listesinde şehir adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+ 1.3. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. 
+  1.3.1. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi sayfası açılmalıdır.
+ 1.4. "Add New Address" butonu kaydedilmiş olan adresin yanında görüntülenebilmeli ve aktif olmalıdır.
+2. Adres Bilgi Sayfasında kullanıcının kayıt etmiş olduğu adres görüntülenebilmeli. 
+Tasarım mockuptaki gibi olmalıdır.
+ 2.1. Adres Bilgi Sayfasında müşteriye kayıtlı adreslerden iki adres bilgisi görüntülenebilmeli.
+  2.1.1. Müşteriye kayıtlı ikiden fazla adres olması halinde adres alanının sağında ve solunda "ok" ikonu oluşturulmalıdır. Kullanıcı "ok" ikonlarına tıkladığında müşteriye kayıtlı diğer adresleri de görüntüleyebilmelidir.
+ 2.2. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+  2.2.1. Müşterinin tek bir adres kaydı olduğu durumda "Delete" kullanıma kapalı olmalıdır. İlgili buton sadece bir müşterinin iki veya daha fazla adresi kayıtlı olduğu durumda aktif hale gelmelidir.
+ 2.3. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilmelidir.
+  **2.3.1. Edit butonuna tıklandığında 1. maddenin alt maddelerinde belirtilmiş olan kabul kriterleri geçerli olmalıdır.**
+  Tasarım aşağıdaki mockup gibi olmalıdır.
+ 2.4. Kullanıcı, istediği kayıtlı adresi adres alanı içerisinde bulunan üç nokta içerisinden “Set as Primary Address” butonuna basarak müşterinin birincil adresi olarak güncelleyebilmelidir.
+  2.4.1. Müşterinin tek bir adresi olduğu durumda Primary Address butonu pasif olmalıdır.
+
+
+Use-Case Senaryo 1: EA-43
+Use-Case Senaryo 2: EA-44
+Use-Case Senaryo 3: EA-46
+Use-Case Senaryo 4: EA-47
+
+
+Requirement 8: EA-22
+Summary: Mevcut müşteri kontakt bilgi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-20 içeriğinde oluşturulmuş "Customer Info" sayfasına geldiği ardından sekmelerden "Contact Medium"a tıkladığı varsayılmıştır.
+
+1. Kullanıcının, kontakt bilgilerinin görüntelenebildiği bir form ekranı oluşturulmalıdır.
+ 1.1. Kullanıcı form ekranı içerisindeki kutularının detaylı bilgisini ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+2. Kullanıcının müşteri kontakt bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Contact Medium" sayfasında bir kalem ikonu oluşturulmalıdır.
+ 2.1. Kullanıcı, “Contact Medium” Sayfasında bulunan kalem ikonuna tıkladığında, “Contact Medium Update” ekranı açılmalıdır.
+ 2.2. “Contact Medium Update” içerisindeki form ekranı girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan kontaktDetay.xlsx dosyasında bulabilirsiniz.
+ 2.3. Kullanıcının kontakt girdi kutularına girdiği verilerin geçersiz bir formatta olması halinde girdi kutusu belirgin hale getirilmeli (kırmızı highlight, stroke) ve ekranda "Your input must be in a valid format" uyarısı belirmeli.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ 2.4. “Contact Medium Update” ekranı içerisinde kullanıcının değiştirmiş olduğu bilgilerin kayıt edilebilmesi için bir "Save" butonu oluşturulmalıdır.
+ 2.5. “Contact Medium Update” ekranı içerisinde kullanıcının bilgileri değiştirmeden çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır. Kullanıcı bu işlem için tekrardan kalem ikonuna da tıklayabilir.
+ 2.6. “Save” butonuna tıklandığında sistem girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini kontrol etmelidir. 
+  2.6.1. Girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda sistem, bir uyarı pop-up ekranı oluşturarak “A customer is already exist with this E-mail or Mobile Number” hata mesajını göstermelidir.
+  2.6.2. “E-mail” ve/veya "Mobile Number" değerinin boş olması durumunda sistem, bir uyarı pop-up ekranı oluşturarak “E-mail and Mobile Number areas can't be empty!” hata mesajını göstermelidir.
+  2.6.3. Kullanıcının pop-up'ları kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+
+
+Requirement 9: EA-24
+Summary: Mevcut müşteri fatura hesapları sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-13 içeriğinde oluşturulmuş "Customer Info" sayfasına geldiği ardından sekmelerden "Customer Account"a tıkladığı varsayılmıştır.
+
+1. Müşterinin herhangi bir faturası hesabı bulunmuyorsa, kullanıcı herhangi bir tablo görüntülememelidir. 
+2. Sistemde tanımlı fatura hesap detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan accountDetay.xlsx dosyasında bulabilirsiniz.
+3. Kullanıcının yeni bir fatura hesabı yaratması için “Create New Account” butonu oluşturulmalıdır.
+ 3.1. “Create New Account” butonuna tıklandığında “Create Billing Account” ekranı açılmalıdır.
+  3.1.1. “Create Billing Account” ekranında hesap bilgilerinin girebileceği bir form ekranı oluşturulmalıdır.
+  3.1.2. Hesap form ekranı içerisindeki girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan faturaDetay.xlsx dosyasında bulabilirsiniz.
+  3.1.3. Fatura adres bilgilerinin girilebilmesi için oluşturulacak alan EA-18 fonksiyonel isteri gibi olmalıdır.
+  3.1.4. Adres bilgi alanında müşterinin kayıtlı adresinin seçilebilmesi için "Select Registered Address" butonu oluşturulmalıdır.
+   3.1.4.1. "Select Registered Address" butonuna tıklandığında  müşterinin hesabında kayıtlı adreslerinin görüntülendiği bir pop-up ekranı açılmalıdır.
+   3.1.4.2. Adres Bilgi Sayfasında müşteriye kayıtlı adreslerden iki adres bilgisi görüntülenebilmeli.
+   3.1.4.3. Müşteriye kayıtlı ikiden fazla adres olması halinde adres alanının sağında ve solunda "ok" ikonu oluşturulmalıdır. Kullanıcı "ok" ikonlarına tıkladığında müşteriye kayıtlı diğer adresleri de görüntüleyebilmelidir.
+   3.1.4.4. Açılan kayıtlı adresler pop-upında istenilen adrese tıklanarak seçim yapılabilmelidir ve seçim yapıldıktan sonra pop-up ekranı kapatılmalıdır.
+  3.1.5. “Create Billing Account” ekranı içerisinde kullanıcının girmiş olduğu bilgiler ile fatura hesabı oluşturabilmesi için bir "Create" butonu oluşturulmalıdır.
+   3.1.5.1. "Create" butonuna tıklandığında fatura hesabı oluşturulmalı ve “Create Billing Account” ekranı kapatılmalıdır. Oluşturulan fatura hesabı "Customer Accounts" sayfasındaki tabloda listelenmelidir.
+  3.1.6. “Create Billing Account” ekranı içerisinde kullanıcının fatura hesabı oluşturmadan çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır.
+   3.1.6.1. "Cancel" butonuna tıklandığında “Create Billing Account” ekranı kapatılmalı ve "Customer Accounts" sayfası açılmalıdır.
+4. Kullanıcının fatura hesap bilgilerini güncelleyebilmesi ve/veya değiştirebilmesi için "Customer Account" sayfasında fatura hesapları yanında kalem ikonu oluşturulmalıdır.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 4.1. Kullanıcı, “Customer Account” sayfasında bulunan kalem ikonuna tıkladığında, “Update Billing Account” ekranı açılmalıdır. 
+  4.1.1. “Update Billing Account” ekranında bulunacak alanlar, güncellenmek istenen fatura hesabının bilgileriyle dolu şekilde gelmelidir.
+  4.1.2. Gösterilecek alanlar “Create Billing Account” ekranı ile aynı olmalıdır. 
+  4.1.3. Kullanıcı gerekli bilgileri güncelleyip “Save” butonuna tıkladığında, fatura hesabı güncellenmelidir ve “Update Billing Account” ekranı kapanarak "Customer Account" sayfası açılmalıdır.
+  4.1.4. “Create Billing Account” ekranı içerisinde kullanıcının fatura hesabı oluşturmadan çıkabilmesi için bir "Cancel" butonu oluşturulmalıdır.
+   4.1.4.1. "Cancel" butonuna tıklandığında “Create Billing Account” ekranı kapatılmalı ve "Customer Accounts" sayfası açılmalıdır.
+5. Kullanıcının fatura hesap bilgilerini silebilmesi için "Customer Account" sayfasında fatura hesapları yanında çarpı ikonları oluşturulmalıdır.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 5.1. Kullanıcı, “Customer Account” ekranında bulunan “çarpı” ikonuna tıkladığında, “Are you sure to delete this billing account?” uyarı pop-up ekranı açılmalıdır. 
+  5.1.1. Uyarı pop-up ekranında kullanıcının onay verebilmesi için bir "Delete" butonu oluşturulmalıdır.
+  5.1.2. Uyarı pop-up ekranında kullanıcının silme işlemini iptal edebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+  Tasarım aşağıdaki mockup gibi olmalıdır.
+  5.1.3. Kullanıcı “Delete” butonuna tıkladığında sistem, ilgili fatura hesabına bağlı bir ürün olup olmadığını sorgulamalıdır. 
+   5.1.3.1. Ürün sorgulanması sonucunda fatura hesabında ürün bulunur ise "Due to existance of product/s, this billing account can not be deleted" uyarı pop-up'ı açılmalı ve fatura hesabı silme işlemi gerçekleştirilmemelidir.
+   5.1.3.2. Ürün sorgulanması sonucunda fatura hesabında ürün bulunmamış ise fatura hesabı silinmeli ve kullanıcıya “Billing account deleted successfully” bilgi pop-up’ı açılmalıdır.
+   5.1.3.3. Kullanıcının pop-up'ları kapatabilmesi için “x” çarpı ikonu oluşturulmalıdır. Çarpı ikonu tıklandığında ilgili pop-up kapatılmalı veya kullanıcı ekranda herhangi bir yere tıkladığında uyarı pop-up ekranını kapatabilmelidir.
+6. Fatura hesabına bağlı olan ürünlerin gösteriminin yapılabilmesi için her bir satırda yukarı/aşağı yönlü ok kullanılmalıdır. Butona tekrar tıklandığında gösterim gizlenmelidir. 
+Tasarım aşağıdaki mockup gibi olmalıdır.
+ 6.1. Her bir faturaya bağlı ürünler, fatura hesabının detayında bulunan tablo içerisinde görüntülenecektir. Sistemde tanımlı fatura ürün detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan faturaUrunDetay.xlsx dosyasında bulabilirsiniz.
+ 6.2. Kullanıcının ürün iptal edebilmesi için ürün bilgileri tablosundaki action sütununda her ürün satırında bir silme ikonu oluşturulmalıdır.
+  6.2.1. Silme ikonuna tıklandığında ürün iptali süreci başlatılmalıdır. Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 6.3. Kullanıcının ürün detay bilgisini görüntüleyebilmesi için ürün bilgileri tablosundaki action sütununda her ürün satırında bir göz ikonu oluşturulmalıdır.
+  6.3.1. Göz ikonuna tıklandığında ilgili ürünün detay bilgileri bir modal ekranda açılmalıdır. Sistemde tanımlı ürün detaylarının gösterildiği tabloda bulunacak alanları ekte bulunan urunDetay.xlsx dosyasında bulabilirsiniz.
+  Tasarım aşağıdaki mockup gibi olmalıdır.
+ 6.4. Kullanıcının gösterilen ürünlerin bir veya birden fazlasını seçebilmesi için her ürün satırında bir tik kutusu oluşturulmalıdır.
+  6.4.1. Fatura detayındaki her ürünün aynı anda seçilebilmesi için tablo başlıklarının yanında bir tik kutusu oluşturulmalıdır.
+ 6.5. Kullanıcının seçilen ürünlerin transferini yapabilmesi için bir "Transfer" butonu oluşturulmalıdır. Ürün seçimi yapılmadığında bu buton pasif olmalıdır.
+ Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 6.6. Kullanıcının seçilen ürünlerin servis adres değişikliğini yapabilmesi için bir "Service Adress Change" butonu oluşturulmalıdır. Ürün seçimi yapılmadığında bu buton pasif olmalıdır.
+ Projenin kapsamı içerisinde bu işlem gerçekleştirilmeyeceği için, bu iş etkileşimi bu doküman içerisinde tariflenmeyecektir.
+ 6.7. Kullanıcının yeni bir satış gerçekleştirebilmesi için  "Start New Sale" butonu oluşturulmalıdır.
+  6.7.1. Kullanıcı, “Start New Sale” butonuna tıkladığında “Offer Selection” sayfası açılmalıdır. (EA-25)
+  
+Use-Case Senaryo 1: EA-50
+Use-Case Senaryo 2: EA-52
+Use-Case Senaryo 3: EA-53
+Use-Case Senaryo 4: EA-54
+
+
+Requirement 10: EA-25
+Summary: Teklif seçimi sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-24'te “Start New Sale” butonuna tıkladığı varsayılmıştır.
+
+1. Katalog üzerinden ürün ve/veya kampanya seçilebilmesi için alan oluşturulmalıdır.
+ 1.1 Katalog ve Kampanya seçim ekranları ayrı sekmeler ile gösterilmelidir.
+2. Katalog ekranında katalogların seçilebilmesi ve listelenmesi için bir seçim kutusu oluşturulmalıdır.
+ 2.1 Select seçim kutusuna tıklandığında kullanıcı, sistemde tanımlı bütün kataloglara erişebilmelidir.
+ 2.2 Select seçim kutusu açıldığında ilk olarak son eklenen 10 katalog görüntülenmelidir. Daha fazla katalog olması halinde seçim kutusu içeriği mouse tekerleği ile aşağı kaydırılabilir olmalıdır.  
+ 2.3 Select seçim kutusu içerisinden bir seçim yapıldığında ürün teklif id'leri ve ürün teklif isimleri katalog ekranı içerisinde bir tabloda gösterilmelidir.
+ 2.4 Kullanıcının ürün seçim tablosunda ürün teklif id ve/veya ürün teklif ismine göre arama yapabilmesi için girdi kutuları oluşturulmalıdır.
+  2.4.1 Doldurulan ürün teklif id ve ürün teklif ismi girdi kutularına göre arama yapılabilmesi için bir "Search" butonu oluşturulmalıdır.
+  2.4.2 Search butonuna tıklandığında ilgili ürün, ürün seçim tablosunda listelenmelidir.
+ 2.5 Kullanıcı tarafından sepete eklenecek ürünler ürün seçim tablosu içerisinden tek tek seçilebilir ve sepete aktarılabilir olmalıdır.
+  2.5.1 Kullanıcı ürünleri sepete aktarırken aynı anda birden fazla ürün seçilebilir olmamalıdır.
+3. Kampanya ekranında kampanyaların seçilebilmesi ve listelenmesi için bir seçim kutusu oluşturulmalıdır.
+ 3.1 Select seçim kutusuna tıklandığında kullanıcı, sistemde tanımlı bütün kampanyalara erişebilmelidir.
+ 3.2 Select seçim kutusu açıldığında ilk olarak son eklenen 10 kampanya görüntülenmelidir.
+ Daha fazla kampanya olması halinde seçim kutusu içeriği mouse tekerleği ile aşağı kaydırılabilir olmalıdır.
+ 3.3 Select seçim kutusu içerisinden bir seçim yapıldığında kampanya id, ürün teklif id ve ürün teklif isimleri kampanya ekranı içerisinde bir tabloda gösterilmelidir.
+ 3.4 Kullanıcının kampanya seçim tablosunda kampanya id ve/veya kampanya ismine göre arama yapabilmesi için girdi kutuları oluşturulmalıdır.
+  3.4.1 Doldurulan kampanya id ve kampanya ismi girdi kutularına göre arama yapılabilmesi için bir "Search" butonu oluşturulmalıdır.
+  3.4.2 Search butonuna tıklandığında ilgili kampanya ve kampanyaya ait ürün teklifleri kampanya seçim tablosunda listelenmelidir.
+ 3.5 Kullanıcı tarafından sepete eklenecek kampanyalar, kampanya seçim tablosu içerisinden tek tek seçilebilir ve sepete aktarılabilir olmalıdır.
+  3.5.1 Kullanıcı kampanyaları sepete aktarırken aynı anda birden fazla kampanya seçilebilir olmamalıdır.
+4. Seçilen ürünler ve/veya kampanyaların sepete aktarılabilmesi için "Add to Basket" butonu oluşturulmalıdır.
+ 4.1 Ürün veya kampanya seçildikten sonra "Add to Basket" butonuna tıklandığında seçilen ürün veya kampanya ilgili sepet bilgi ekranında gösterilmelidir.
+5. Sepete eklenen ürünlerin ve/veya kampanyaların bilgilerinin gösterilebilmesi için bir sepet bilgi ekranı oluşturulmalıdır. 
+ 5.1 Sepete eklenen ürünlerin id'leri, isimleri ve sistemde tanımlı fiyatları sepet ekranında gösterilmelidir.
+  5.1.1 Sepete eklenen kampanyalar için sepet bilgi ekranında gösterilen ürün bilgilerine ek olarak kampanya id'si de sepet bilgi ekranı içerisinde gösterilmelidir.
+ 5.2 Kullanıcı tarafından sepete eklenmiş olan ürünler ve/veya kampanyaların fiyatlarının toplam değeri sepet bilgi ekranı içerisinde gösterilmelidir.
+ 5.3 Kullanıcının sepete eklenmiş olan bütün ürünleri ve/veya kampanyaları sepetten temizleyebilmesi için bir "Clear" butonu oluşturulmalıdır.
+  5.3.1 Sepet Bilgi Ekranı içerisinde herhangi bir sepet içeriği olmaması halinde “Clear” butonu pasif olmalıdır.
+ 5.4 Kullanıcının sepete eklenmiş olan ürünleri ve/veya kampanyaları sepetten tek tek temizleyebilmesi için her bir sepet içeriğinin yanında bir "-" ikonu oluşturulmalıdır.
+6. Kullanıcının sepette bulunan içeriklerle satış işlemine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 6.1 Sepette herhangi bir içerik bulunmaması halinde "Next" butonu pasif olmalıdır.
+ 6.2 Kullanıcı "Next" butonuna tıkladığında "Product Configuration" sayfası açılmalıdır. (EA-26)
+
+Use-Case Senaryo 1: EA-56
+
+
+Requirement 11: EA-26
+Summary: Ürün konfigürasyonu sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının CRM-25'i tamamladığı ve "Next" butonuna tıkladığı varsayılmıştır.
+
+1. Kullanıcı Ürün Konfigürasyon sayfasında EA-25 içerisinde sepete eklemiş olduğu içeriklerin tamamını görüntüleyebilmelidir.
+ 1.1. Her ürünün karakteristik özellikleri Ürün Konfigürasyon sayfasında ayrı form ekranları içerisinde listelenmelidir.
+  1.1.1. Ürüne ait spesifik bilgiler, sistemde kayıtlı her ürün için listelenmeli ve ürünlere özel olarak kendi form ekranlarında görüntülenebilmelidir.
+ 1.2. Sisteme her ürün için tanımlı bilgiler ilgili veri tabanında bulunmaktadır. *
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ 1.3. Sepet içeriklerinin gösterildiği Konfigürasyon sayfasında sepet içeriği ve bilgilerinin sayfa boyutuna sığmaması durumunda kullanıcı fare tekerleği yardımı ile sayfayı aşağıya kaydırabilmelidir.
+2.  Kullanıcının satış işlemini tamamlaması için konfigürasyon ekranında servis adresinin seçilebileceği bir alan oluşturulmalıdır.
+ 2.1. Adres seçim alanı içerisinde müşterinin kayıtlı adresleri görüntülenebilmelidir. 
+ 2.2. Kullanıcı istediği takdirde kayıtlı adreslerden birini seçebilmeli veya yeni bir adres ekleyebilmelidir. 
+  2.2.1. Konfigürasyon Ekranında müşteriye kayıtlı adreslerden iki adres bilgisi görüntülenebilmelidir.
+  2.2.2. Müşteriye kayıtlı ikiden fazla adres olması halinde adres alanının sağında ve solunda "ok" ikonu oluşturulmalıdır. Kullanıcı "ok" ikonlarına tıkladığında diğer müşteriye kayıtlı adresleri de görüntüleyebilmelidir.
+  Tasarım aşağıdaki mockup gibi olmalıdır.  
+ 2.3. Kullanıcının yeni bir adres ekleyebilmesi için "Add New Address" butonu oluşturulmalıdır.
+ 2.4. Kullanıcı "Add New Address" butonuna tıkladığında adres girişinin yapılabileceği bir pop-up açılmalıdır.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+ Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+  2.4.1. Şehir bilgisinin kullanıcı tarafından girilebilmesi için şehir açılır listesi(dropdown box) oluşturulmalıdır. 
+   2.4.1.2. Şehirler, bu şehir açılır listesinde şehir adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+  2.4.2. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt pop-up ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+  2.4.3. Kullanıcının yeni bir adres eklemeden pop-up'ı kapatabilmesi için bir "Cancel" butonu oluşturulmalıdır.
+ 2.5. Kaydedilen adres, adres bilgi ekranında görüntülenmeli ve "Add New Address" butonu kaldırılmalıdır.
+ 2.6. Gösterilen adreslerde seçim veya düzenleme işlemlerinin gerçekleştirebilmesi için adres alanlarında "Üç Nokta" ikonu oluşturulmalıdır.
+  2.6.1. Kullanıcı seçmek istediği servis adresini, adres alanı içerisindeki adreslerden herhangi birine tıklayarak veya "Üç Nokta" ikonu içerisinden "Select Address" butonuna tıklayarak seçebilir. 
+  2.6.2. Kullanıcı adres seçimini iptal etmek istediğinde, seçmiş olduğu adresin üstüne tıklayarak veya "Üç Nokta" içerisinden "Select Address" butonuna tekrar tıkladığında adres seçimini iptal edebilir.
+  2.6.3. Kullanıcı, kayıtlı adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilmelidir.
+   2.6.3.1. Müşterinin tek bir adres kaydı olduğu durumda "Delete"  butonu kullanıma kapalı olmalıdır. İlgili buton sadece bir müşterinin iki veya daha fazla adresi kayıtlı olduğu durumda aktif hale gelmelidir.
+  2.6.4. Kullanıcı, kayıtlı adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilmelidir.
+   **2.6.4.1. Edit butonuna tıklandığında 2.4. maddenin alt maddelerinde belirtilmiş olan kabul kriterleri geçerli olmalıdır.**
+3. Kullanıcının Konfigürasyon ekranından EA-25'de yapılmış olan Teklif Seçimi ekranına geri dönebilmesi için bir "Previous" butonu oluşturulmalıdır.
+4. Kullanıcının satış işlemine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı, “Next” butonuna tıkladığında “Submit Order” ekranı açılmalıdır. (EA-27)
+
+Use-Case Senaryo 1: EA-57
+
+Requirement 12: EA-27
+Summary: Sipariş tamamlama sayfasının oluşturulması
+
+Acceptance Criterias:
+Varsayım 1: Kullanıcının EA-26'yı tamamladığı ve “Next” butonuna tıkladığı varsayılmıştır.
+
+1. Kullanıcının EA-26'da oluşturulmuş ürün konfigürasyon özet bilgilerin gösterileceği bir alan oluşturulmalıdır.
+ 1.1. Gerçekletirilecek sipariş için sistem tarafından otomatik olarak tekil bir sipaiş numarası oluşturulmalı ve Özet Bilgi ekranında "Order ID" olarak gösterilmelidir.
+ 1.2. Kullanıcı tarafından konfigüre edilmiş ürünler ve/veya kampanyalar Özet Bilgi ekranında "Order Items" olarak gösterilmelidir.
+ 1.3. Kullanıcı tarafından Ürün Konfigürasyonu(EA-26) sayfasında seçilmiş olan adres, "Service Address" olarak Özet Bilgi ekranında gösterilmelidir. 
+ 1.4. Kullanıcı tarafından Teklif Seçim ekranında (EA-25) sepete eklenmiş olan ürünler ve/veya kampanyaların fiyatlarının toplam değeri Özet Bilgi Ekranı içerisinde "Total Amount" olarak gösterilmelidir.
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+2. Kullanıcının Sipariş Tamamlama Sayfasından EA-26'da yapılmış olan Ürün Konfigürasyon Sayfasına geri dönebilmesi için bir "Previous" butonu oluşturulmalıdır.
+3. Kullanıcının satış işlemini tamamlayabilmesi için bir "Submit" butonu oluşturulmalıdır.
+ 3.1. Kullanıcı, "Submit" butonuna tıkladığında, kullanıcının onay verebilmesi için "Would you like to submit this order?" ibaresi ile bir pop-up ekranı açılmalıdır.
+  3.1.1. Kullanıcının satışı tamamlamadan pop-up ekranını kapatabilmesi için "Cancel" butonu oluşturulmalıdır.
+  "Cancel" butonuna tıklandığında onay pop-up ekranı kapatılmalı ve Sipariş Tamamlama Sayfası gösterilmelidir.
+  3.1.2. Kullanıcının satış işlemini tamamlaması için onay pop-up ekranı içerisinde bir "Agree" butonu oluşturulmalıdır.
+  Kullanıcı, “Agree” butonuna tıkladığında sipariş onaylanıp, orta katmana geçilmelidir.
+
+Use-Case Senaryo 1: EA-58
+
+
+
+---------------------------
+EA-30;
+EA-14 Use-Case
+Ön Koşullar:		Sistem giriş sayfasının tarayıcıda açılması
+Beklenen Çıktı: 	Kullanıcı müşteri arama sayfasına yönlendirilir.
+Ana Senaryo :
+	Adım 1 	Kullanıcı, kullanıcı adı ve şifresini girer.
+	Adım 2 	Kullanıcı, login butonuna tıklar
+	Adım 3 	Sistem, girilen kullanıcı adı ve şifreyi kontrol eder
+	Adım 4 	Sistem, girilen kullanıcı adı ve şifrenin doğru olduğunu belirler.
+	Adım 5 	Sistem, kullanıcıyı müşteri arama ekranına yönlendirir.
+Alternatif Senaryo:
+ 	Adım 4.1	Sistem, girilen kullanıcı adı ve şifrenin doğru olmadığını belirler
+	Adım 4.2	Sistem kullanıcıya “Wrong user name or password. Please try again” uyarı mesajını gösterir.
+
+
+EA-32;
+EA-15 Use-Case 1
+Ön Koşullar:		Kullanıcının EA-14 Story'sindeki işlemleri tamamladığı ve filtreleme sayfasına geldiği
+Beklenen Çıktı: 	Müşteri bilgilerinin gösterilmesi
+Ana Senaryo:
+ 	Adım 1 	Kullanıcı arama kriterlerinden birini doldurur
+	Adım 2 	Sistem, “Search” butonunu çalışır kılar
+	Adım 3 	Kullanıcı “Search” butonuna tıklar.
+	Adım 4 	Sistem, girilen alanlarla tam olarak eşleşen kayıtları sorgular.
+	Adım 5 	Sistem, bulunan müşterileri listeler.
+	Adım 6 	Kullanıcı, listeden bir müşterinin kaydına tıklar.
+	Adım 7 	Sistem, müşteri bilgilerinin gösterildiği sayfayı açar.
+Alternatif Senaryo:
+ 	Adım 4.1	Sistem, “No customer found! Would you like to create the customer?” uyarı mesajını gösterir.
+	Adım 4.2	Adım 1’e dön.
+
+EA-33;
+EA-15 Use-Case 2
+Ön Koşullar:		Kullanıcının EA-14 Story'sindeki işlemleri tamamladığı ve filtreleme sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin demografik bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1		Kullanıcı müşteri arama sayfasındaki "Create Customer" butonuna tıklar.
+Alternatif Senaryo:
+ 	Adım 1.1	Kullanıcı arama kriterlerini girerek "Search" butonuna tıklar
+	Adım 1.2	Kullanıcı müşteri bulunamaması sonucunda çıkan pop-up ekranında “Create Customer” butonuna tıklar.
+	Adım 1.3 	Sistem, demographic info sayfasını açar.
+
+	
+EA-34;
+EA-16 Use-Case
+Ön Koşullar:		Kullanıcının EA-15 Story'sindeki işlemleri tamamladığı ve demografik bilgiler sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin adres bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1 		Kullanıcı zorunlu alanları girerek “Next” butonuna tıklar.
+	Adım 2		Sistem, girilen “Nationality ID” alanının tekilliğini kontrol eder.
+	Adım 3		Sistem, adres bilgisi sayfasını açar.
+Alternatif Senaryo:
+	Adım 2.1	Sistem, girilen “Nationality ID” değerinin tekil olmaması durumunda “A customer is already exist with this Nationality ID” hata mesajını gösterir.
+	Adım 2.2	Adım 1'e geri dön.
+	
+
+EA-35;
+EA-18 Use-Case
+Ön Koşullar:		Kullanıcının EA-16 Story'sindeki işlemleri tamamladığı ve adres bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin kontakt bilgilerinin girileceği sayfaya yönlendirilmesi
+Ana Senaryo:
+ 	Adım 1 		Kullanıcı, “Add New Address” butonuna basar.
+	Adım 2		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3		Kullanıcı zorunlu alanları girerek “Save” butonuna basar.
+	Adım 4		Sistem, girilen bilgilerle adres bilgisini kaydederek modal ekranı kapatır ve “next” butonunu çalışır kılar.
+	Adım 5		Kullanıcı, next butonuna basar.
+	Adım 6		Sistem, “Contact Medium” ekranını açar.
+Alternatif Senaryo: (Adımlar arası boşluklar, adımların farklı senaryolar olduğunu gösterir.)*
+	Adım 5.1	Kullanıcı, kayıt etmiş olduğu adreste değişiklik yapabilmek için üç noktadan "Edit" butonuna tıklar.
+	Adım 5.2	Kullanıcı gerekli alanları değiştirdikten sona “Save” butonuna basar.
+	Adım 5.3	Adım 4'e dön.
+	
+	Adım 5.4	Kullanıcı, kayıt etmiş olduğu adresi silebilmek için üç noktadan "Delete" butonuna tıklar.
+	Adım 5.5	Sistem seçilmiş olan kayıtlı adresi siler.
+	Adım 5.6	Adım 1'e dön.
+	
+	Adım 5.7	Kullanıcı, yeni bir adres girişi yapabilmek için “Add new address” butonuna basar.
+	Adım 5.8	Adım 2'ye dön.
+	
+
+EA 36;
+EA-19 Use-Case
+Ön Koşullar:		Kullanıcının EA-18 Story'sindeki işlemleri tamamladığı ve kontakt bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin yaratılması
+Ana Senaryo:
+ 	Adım 1		Kullanıcı, zorunlu alanları girerek “Create” butonuna basar.
+	Adım 2		Sistem, girilen "E-mail" ve "Mobile Number" alanlarının tekilliğini kontrol eder.
+	Adım 3		Sistem, kullanıcıyı yaratır.
+	Adım 4		Sistem, kullanıcıyı, müşterinin bilgilerinin gösterildiği “Customer Info” sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 1.1	Sistem, "E-mail" ve "Mobile Number" alanlarının doğru formatta yazılmadığını belirler.
+	Adım 1.2	Kullanıcı zorunlu alanların birini veya hepsini boş bırakarak "Create" butonuna tıklar.
+	Adım 1.3	Sistem, "E-mail and Mobile Number areas can not be empty!" hata mesajını gösterir.
+	Adım 2.1	Sistem, girilen “E-mail” ve/veya "Mobile Number" değerinin ya da değerlerinin tekil olmaması durumunda “A customer is already exist with this E-mail or Mobile Number” hata mesajını gösterir.
+	Adım 2.2	Adım 1'e dön.
+	
+
+EA 38;
+EA-20 Use-Case
+Ön Koşullar:		Kullanıcının EA-19 Story'sindeki işlemleri tamamladığı veya EA-15 içerisinden “Customer ID” ye tıklatarak Müşteri Bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşteri bilgilerinin güncellenmesi
+Ana Senaryo:
+ 	Adım 1 	    Kullanıcı, müşteri bilgileri sayfasında bulunan kalem işaretine tıklar.
+    Adım 2 	    Sistem, “Customer Info Update” sayfasını açar.
+    Adım 3 	    Kullanıcı, güncellemek istediği alanlara tıklayarak “Save” butonuna tıklar.
+    Adım 4 	    Sistem, girilen “Nationality ID” alanının tekilliğini kontrol eder.
+    Adım 5 	    Sistem, kullanıcıyı günceller.
+    Adım 6 	    Sistem, kullanıcıyı, müşterinin bilgilerinin gösterildiği “Customer Info” sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 2.1  	Kullanıcı, “Customer Info Update” sayfasında “Cancel” butonuna tıklar.
+    Adım 2.2 	Sistem, “Customer Info” sayfasını açar.
+
+    Adım 4.1    Sistem, girilen “Nationality ID” değerinin tekil olmaması durumunda “A customer is already exist with this Nationality ID” hata mesajını gösterir.
+    Adım 4.2  	Adım 3’e dön.
+
+
+
+EA 39;
+EA-20 Use-Case 2
+Ön Koşullar:		Kullanıcının EA-19 Story'sindeki işlemleri tamamladığı veya EA-15 içerisinden “Customer ID” ye tıklatarak Müşteri Bilgileri sayfasına geldiği
+Beklenen Çıktı: 	Müşterinin Silinmesi
+Ana Senaryo:
+	Adım 1	 	Kullanıcı, müşteri bilgileri sayfasında bulunan çöp kutusu işaretine tıklar.
+	Adım 2		Sistem, "Are you sure to delete this customer?" uyarı pop-up'ını açar.
+	Adım 3		Kullanıcı "Delete" butonuna basarak onay verir.
+	Adım 4 		Sistem, müşterinin fatura hesabı/hesapları altında aktif bir ürün olup olmadığını sorgular.
+	Adım 5 		Sistem, müşteri kaydını siler.
+	Adım 6 		Sistem, kullanıcıyı müşteri arama sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 3.1	Kullanıcı "Cancel" butonuna basar.
+	Adım 3.2	Sistem, “Customer Info” sayfasını açar.
+	
+	Adım 4.1  	Müşterinin aktif bir ürünü olması halinde, Sistem, “Since the customer has active products, the customer cannot be deleted.” uyarı mesajını gösterir.
+    Adım 4.2	Sistem, “Customer Info” sayfasını açar.
+	
+	
+	
+EA 43;
+EA-21 Use-Case 1
+İsim: 				Yeni Bir Müşteri Adresinin Eklenmesi
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Addresses" sekmesine tıkladığı
+Beklenen Çıktı: 	Müşteri adres bilgilerine yeni bir adresinin eklenmesi
+Ana Senaryo:
+	Adım 1	 	Kullanıcı, “Address” sayfasında “Add New Address” butonuna basar.
+	Adım 2 		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3 		Kullanıcı zorunlu alanları girerek “Save” butonuna basar.
+	Adım 4 		Sistem, girilen bilgilerle adres yaratarak modal ekranı kapatır.
+Alternatif Senaryo:
+	Adım 2.1	Kullanıcı, adres güncelleme modal ekranında “Cancel” butonuna tıklar.
+	Adım 2.2	Sistem, adres modal ekranını kapatır.
+
+
+EA 44;
+EA-21 Use-Case 2
+İsim: 				Var Olan Müşteri Adresinin Güncellenmesi
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Addresses" sekmesine tıkladığı
+Beklenen Çıktı:		Müşteri adres bilgilerinin güncellenmesi
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, “Address” sayfasında bulunan adresin içerisinde bulunan üç noktaya tıklar ve “Edit” butonuna basar.
+	Adım 2 			Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3 			Kullanıcı zorunlu alanları girerek “Save” butonuna basar.
+	Adım 4 			Sistem, girilen bilgilerle adres bilgisini güncelleyerek modal ekranı kapatır.
+Alternatif Senaryo:
+ 	Adım 2.1		Kullanıcı, adres güncelleme modal ekranında “Cancel” butonuna tıklar.
+	Adım 2.2		Sistem, adres modal ekranını kapatır.
+
+
+EA 46;
+EA-21 Use-Case 3
+İsim: 				Var Olan Müşteri Adresininin Birincil Adres Seçilmesi
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Addresses" sekmesine tıkladığı
+Beklenen Çıktı:		Müşteri adresinin birincil olarak seçilmesi
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, “Address” sayfasında bulunan müşteri adreslerinin içerisinden birinde bulunan üç noktaya tıklar.
+	Adım 2			Sistem, varsayılan olarak seçilmek istenen adresin, varsayılan adres olup olmadığını sorgular.		
+	Adım 3			Kullanıcı “Set as Primary Address” butonuna basar.
+	Adım 3 			Sistem, seçilen adresi varsayılan adres olarak değiştirir.
+Alternatif Senaryo:
+ 	Adım 2.1		Sistem seçilen adresin varsayılan olduğunu tespit eder.
+	Adım 2.2		"Set as Primary Address" butonu inaktif duruma geçer.
+	Adım 2.3		Adım 1'e dön.
+
+
+EA 47;
+EA-21 Use-Case 4
+İsim: 				Var Olan Müşteri Adresinin Silinmesi
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Addresses" sekmesine tıkladığı
+Beklenen Çıktı:		Müşteri adres bilgilerinin silinmesi
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, “Address” sayfasında bulunan adresin içerisinde bulunan üç noktaya tıklar ve “Delete” butonuna basar.
+	Adım 2 			Sistem, müşterinin birden fazla adresinin olup olmadığını sorgular.
+	Adım 3			Sistem, silinmek istenen adresin varsayılan adres olup olmadığını sorgular.
+	Adım 3 			Sistem, seçilen müşteri adresini siler.
+Alternatif Senaryo:
+ 	Adım 2.1		Sistem, seçilen adresin müşterinin kayıtlı tek adresi olduğunu tespit eder.
+	Adım 2.2		"Delete" butonu inaktif duruma geçer.
+	
+	Adım 3.1		Sistem, seçilen adresin müşterinin varsayılan adresi olduğunu tespit eder.
+	Adım 3.2		Sistem, “The address that you want to delete is a default address. Please, change default address then try again.” hata mesajını gösterir.
+
+
+EA 49;
+EA-22 Use-Case
+İsim:				Müşteri Kontakt Bilgilerinin Güncellenmesi
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Contact Medium" sekmesine tıkladığı
+Beklenen Çıktı: 	Müşteri kontakt bilgisinin güncellenmesi
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, müşteri kontakt bilgileri sayfasında bulunan kalem işaretine tıklar.
+	Adım 2 			Sistem, “Contact Medium Update” sayfasını açar.
+	Adım 3 			Kullanıcı, güncellemek istediği alanlara tıklayarak “Save” butonuna tıklar.
+	Adım 4 			Sistem, girilen bilgilerin doğruluğunu kontrol eder.
+	Adım 5 			Sistem, kullanıcı kontakt bilgilerini günceller.
+	Adım 6 			Sistem, kullanıcıyı, müşterinin kontakt bilgilerinin gösterildiği “Contact Medium” sayfasına yönlendirir.
+Alternatif Senaryo:
+ 	Adım 2.1		Kullanıcı, “Contact Medium Update” sayfasında “Cancel” butonuna tıklar.
+	Adım 2.2		Sistem, “Contact Medium” sayfasını açar.
+
+	Adım 4.1		Sistem, E-mail ve/veya Mobile Number alanının boş bırakıldığını tespit eder
+	Adım 4.2		Sistem, "E-mail and Mobile Number areas can't be empty!" hata mesajını gösterir.
+	Adım 4.3		Adım 3’e dön.
+	
+	Adım 4.4		Sistem, girilen E-mail ve/veya Mobile Number alanının başka müşteri ile eşleştiğini tespit eder.
+	Adım 4.5		Sistem, "A customer is already exist with this E-mail or Mobile Number" hata mesajını gösterir.
+	Adım 4.6		Adım 3'e dön.
+
+
+EA 50;
+EA-24 Use-Case 1
+İsim: 				Yeni Müşteri Fatura Hesabı Oluşturma
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Customer Account" sekmesine tıkladığı
+Beklenen Çıktı:	 	Yeni fatura hesabının oluşturulması
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, “Customer Account” ekranında bulunan “Create New Account” butonuna tıklar 
+	Adım 2 			Sistem, “Create Billing Account” ekranını açar.
+	Adım 3 			Kullanıcı gerekli fatura hesabı bilgilerini girer.
+	Adım 4			Kullanıcı, müşterinin sistemde kayıtlı adreslerinden birini seçmek için "Select Registered Address" butonuna tıklar.
+	Adım 5			Sistem, müşterinin sistemde kayıtlı adreslerinin gözüktüğü pop-up ekranını açar.
+	Adım 6			Kullanıcı, kayıtlı adreslerden birini seçer ve sistem pop-up ekranını kapatır.
+	Adım 7			Kullanıcı “Create” butonuna tıklar.
+	Adım 8 			Sistem, fatura hesabını kaydeder ve kullanıcıyı “ Customer Account” sayfasına yönlendirir.
+Alternatif Senaryo:
+ 	Adım 2.1		Kullanıcı, “Create Billing Account” sayfasında “Cancel” butonuna tıklar.
+	Adım 2.2		Sistem, “Customer Accounts” sayfasını açar. 
+	Adım 4.1		Kullanıcı, müşteriye yeni bir adres girmek için "Add New Address" butonuna tıklar.
+	Adım 4.2		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 4.3		Kullanıcı, zorunlu alanları girerek "Save" butonuna basar.
+	Adım 4.4		Adım 7'den devam et.
+
+
+
+EA 52;
+EA-24 Use-Case 2
+İsim: 				Müşteri Fatura Hesabını Güncelleme
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Customer Account" sekmesine tıkladığı
+Beklenen Çıktı:	 	Müşteri fatura hesabının güncellenmesi
+Ana Senaryo:	
+	Adım 1 			Kullanıcı, “Customer Account” ekranında bulunan müşteri fatura hesabı tablosundaki “kalem” ikonuna tıklar 
+	Adım 2 			Sistem, “Update Billing Account” ekranını, ilgili fatura hesabının bilgileriyle açar.
+	Adım 3 			Kullanıcı güncellenmesi gereken fatura hesabı bilgilerini girer.
+	Adım 4			Kullanıcı “Save” butonuna tıklar.
+	Adım 5 			Sistem, fatura hesabını günceller ve kullanıcıyı “ Customer Account” sayfasına yönlendirir.
+Alternatif Senaryo:
+	Adım 2.1		Kullanıcı, “Update Billing Account” sayfasında “Cancel” butonuna tıklar.
+	Adım 2.2		Sistem, “Customer Accounts” sayfasını açar. 
+	
+	Adım 3.1		Kullanıcı, fatura adresinde değişiklik yapabilmek için üç noktadan "Edit" butonuna tıklar.
+	Adım 3.2		Kullanıcı gerekli alanları değiştirdikten sona “Save” butonuna basar.
+	
+	Adım 3.3		Kullanıcı, kayıt etmiş olduğu adresi silebilmek için üç noktadan "Delete" butonuna tıklar.
+	Adım 3.4		Sistem seçilmiş olan kayıtlı adresi siler.
+	
+	Adım 3.4.1		Kullanıcı, müşterinin sistemde kayıtlı adreslerinden birini seçmek için "Select Registered Address" butonuna tıklar.
+	Adım 3.4.2		Sistem, müşterinin sistemde kayıtlı adreslerinin gözüktüğü pop-up ekranını açar.
+	Adım 3.4.3		Kullanıcı, kayıtlı adreslerden birini seçer ve sistem pop-up ekranını kapatır.
+	
+	Adım 3.4.4		Kullanıcı, müşteriye yeni bir adres girmek için "Add New Address" butonuna tıklar.
+	Adım 3.4.5		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3.4.6		Kullanıcı, zorunlu alanları girerek "Save" butonuna basar.
+	
+	Adım 3.5		Kullanıcı, yeni bir adres girişi yapabilmek için “Add new address” butonuna basar.
+	Adım 3.6		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3.7		Kullanıcı, zorunlu alanları girerek "Save" butonuna basar.
+	
+	Adım 3.8		Kullanıcı, yeni bir adres girişi yapabilmek için “Add new address” butonuna basar.
+	Adım 3.9		Kullanıcı yeni adres girme işlemini iptal etmek için "Cancel" butonuna basar.
+	Adım 3.10		Adım 2'ye dön
+	
+	
+
+EA 53;
+EA-24 Use-Case 3
+İsim: 				Müşteri Fatura Hesabını Silme
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Customer Account" sekmesine tıkladığı
+Beklenen Çıktı:	 	Müşteri fatura hesabının Silinmesi
+Ana Senaryo:
+ 	Adım 1 			Kullanıcı, “Customer Account” ekranında bulunan müşteri fatura hesabı tablosundaki “x” ikonuna tıklar. 
+	Adım 2			Sistem, “Are you sure to delete this billing account?” uyarı pop-up ekranı açar.
+	Adım 3			Kullanıcı silme işlemine devam etmek için "Delete" butonuna basar.
+	Adım 4 			Sistem, ilgili fatura hesabına bağlı bir ürün olup olmadığını kontrol eder.
+	Adım 5 			Sistem, fatura hesabına bağlı bir ürün bulunmadığı durumda fatura hesabı silinir. 
+Alternatif Senaryo:
+ 	Adım 3.1		Kullanıcı silme işlemini iptal etmek için "Cancel" butonuna basar. 
+	Adım 3.2		Sistem, “Customer Accounts” sayfasını açar. 
+	
+	Adım 4.1		Sistem, fatura hesabına bağlı ürün veya ürünleri tespit eder.
+	Adım 4.2		Sistem silme işlemini gerçekleştirmez ve “Due to existance of product/s, this billing account can not be deleted” hata mesajını gösterir.
+	Adım 4.3		Sistem, “Customer Accounts” sayfasını açar. 
+	
+	
+
+EA 54;
+EA-24 Use-Case 4
+İsim: 				Müşteri fatura hesabına bağlı ürün detaylarını görüntüleme
+Ön Koşullar:		Kullanıcının EA-20'de oluşturulmuş Müşteri Bilgileri sayfasında "Customer Account" sekmesine tıkladığı
+Beklenen Çıktı:	 	Fatura ürün detaylarının görüntülenmesi
+Ana Senaryo:
+	Adım 1 			Kullanıcı detayını görmek istediği fatura hesabı satırının aksiyon sütununda aşağı oka tıklar. 
+	Adım 2 			Sistem, ilgili fatura hesabına bağlı olan ürünleri tablo içerisinde gösterir.
+	Adım 3			Kullanıcı, ürünlerin listelendiği tablonun en sağında bulunan "göz" ikonuna tıklar.
+	Adım 4			Sistem, ilgili ürünün detaylarını modal ekranda görüntüler.
+
+
+
+EA 56;
+EA-25 Use-Case
+İsim: 				Ürünlerin ve/veya Kampanyaların Sepete Eklenmesi
+Ön Koşullar:		Kullanıcının EA-24 kapsamında oluşturulmuş "Customer Accounts” sayfasında "Start New Sale" butonuna tıkladığı
+Beklenen Çıktı:	 	Kullanıcının Ürün Konfigürasyonu sayfasına yönlendirilmesi
+Ana Senaryo:
+	Adım 1			Kullanıcı, "Catalog" sekmesi içerisinde "Select" butonuna tıklar ve katalog seçer. 
+	Adım 2			Sistem, katalog içerisindeki ürün tekliflerini bir tabloda listeler.
+	Adım 3 			Kullanıcı tablo içerisinden istediği ürün teklifine tıklar.
+	Adım 4			Kullanıcı seçilen teklifi sepete eklemek için "Add to Basket" butonuna tıklar.
+	Adım 5			Sistem seçili teklifi sepete ekler.
+	Adım 6			Sistem sepete eklenmiş içerikleri bir Sepet ekranında detaylı bilgileri ve toplam sepet tutarı ile listeler.
+	Adım 7			Kullanıcı satış işlemine devam etmek için Sepet ekranı içerisindeki "Next" butonuna tıklar.
+	Adım 8			Sistem, "Product Configuration" sayfasını açar.
+Alternatif Senaryo:
+	Adım 1.1		Kullanıcı "Campaing" sekmesine tıklar.
+	Adım 1.2		Kullanıcı, "Campaign" sekmesi içerisinde "Select" butonuna tıklar ve Kampanya seçer. 
+	Adım 1.3		Kullanıcı, kampanya içerisindeki teklifleri bir tabloda listeler.
+	Adım 1.4		Adım 3'den devam et.
+	Adım 3.1		Kullanıcı kampanya id'si ve/veya kampanya ismini gerekli alanlara yazar.
+	Adım 3.2		Kullanıcı "Search" butonuna basar.
+	Adım 3.3		Adım 1.3'e dön
+	
+	Adım 3.4		Kullanıcı ürün teklif id'si ve/veya ürün teklif ismini gerekli alanlara yazar.
+	Adım 3.5		Kullanıcı "Search" butonuna basar.
+	Adım 3.6		Adım 2'ye dön
+	
+	Adım 7.1		Kullanıcı sepetten çıkarmak istediği teklifler için, her teklif yanında bulunan "-" ikonuna tıklar.
+	Adım 7.2		Sistem "-" ikonuna tıklanmış teklifi sepet içerisinden çıkarır.
+	Adım 7.3		Kullanıcı satış işlemine devam etmek için Sepet ekranı içerisindeki "Next" butonuna tıklar.
+	
+	Adım 7.4		Kullanıcı tüm sepet içeriğini tek seferde temizlemek için Sepet ekranı içerisindeki "Clear" butonuna tıklar.
+	Adım 7.5		Sistem, tüm sepet içeriğini temizler.
+	Adım 7.6		Adım 1'e dön
+	
+
+EA 57;
+EA-26 Use-Case
+İsim: 				Ürünlerin Konfigürasyonun Tamamlanması
+Ön Koşullar:		Kullanıcının EA-25 kapsamında oluşturulmuş "Offer Selection” sayfasında "Next" butonuna tıkladığı
+Beklenen Çıktı:	 	Kullanıcının Sipariş Tamamlama sayfasına yönlendirilmesi
+Ana Senaryo:
+	Adım 1			Sistem, CRM-17 içerisinde sepete eklenmiş teklifleri detaylı bilgileri ile listeler
+	Adım 2			Kullanıcı zorunlu alanları doldurur.
+	Adım 3			Kullanıcı adres alanı içerisinde gösterilen müşteriye kayıtlı adreslerden birini seçer.
+	Adım 4			Kullanıcı "Product Configuration" sayfası içerisindeki "Next" butonuna tıklar.
+	Adım 5			Sistem, "Submit Order" sayfasını açar.
+Alternatif Senaryo:
+	Adım 1.1		Kullanıcı ürün konfigürasyon işlemini iptal etmek için "Previous" butonuna basar. 
+	Adım 1.2		Sistem, “Offer Selection” sayfasını açar. 
+	
+	Adım 3.1		Kullanıcı, “Add New Address” butonuna basar.
+	Adım 3.2		Sistem, adres bilgilerinin girileceği modal ekranı açar.
+	Adım 3.3		Kullanıcı zorunlu alanları girerek “Save” butonuna basar.
+	Adım 3.4		Sistem, girilen bilgilerle adres bilgisini kaydederek modal ekranı kapatır.
+	Adım 3.5		Kullanıcı adres alanından bir adres seçer.
+	
+
+EA 58;
+EA 27 Use-Case
+İsim: 				Yeni Ürün Satışının Gerçekleştirilmesi
+Ön Koşullar:		Kullanıcının EA-26 kapsamında oluşturulmuş "Product Configuration” sayfasında "Next" butonuna tıkladığı
+Beklenen Çıktı:	 	Siparişin tamamlanması
+Ana Senaryo:	
+	Adım 1			Sistem, sipariş özetini tekil sipariş numarası ve sepet toplam tutarı ile birlikte listeler.
+	Adım 2			Kullanıcı "Submit" butonuna tıklar.
+	Adım 3			Sistem "Would you like to submit this order?" onay pop-up'ını açar.
+	Adım 4			Kullanıcı "Agree" butonuna tıklar.
+	Adım 5 			Sistem onay pop-up'ını kapatır.
+	Adım 6			Sistem, siparişi orta katmana geçirir.
+Alternatif Senaryo:
+	Adım 2.1		Kullanıcı "Previous" butonuna tıklar.
+	Adım 2.2		Sistem "Product Configuration" sayfasını açar.
+	
+	Adım 4.1		Kullanıcı "Cancel" butonuna tıklar.
+	Adım 4.2		Sistem, onay pop-up'ını kapatarak "Submit Order" ekranını açar.

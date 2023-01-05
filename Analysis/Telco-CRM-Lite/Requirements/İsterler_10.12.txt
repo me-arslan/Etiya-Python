@@ -1,0 +1,91 @@
+Requirement 1: 
+Summary: Etiya Akademi kullanıcıları, login ekranından kullanıcı adı ve şifre bilgisi ile giriş yapabilmelidir.
+
+Accaptance Criterias:
+1. Kullanıcının, kullanıcı adı girebileceği bir girdi kutusu oluşturulmalıdır.
+2. Kullanıcının, şifre girebileceği bir girdi kutusu oluşturulmalıdır.
+ 2.1. Şifre girdi kutusu doldurulurken girilen şifre (*) gösterimi ile gizlenmelidir.
+ 2.2. Kullanıcının istediği takdirde girdiği şifreyi görebilmesi için gir kutusuna bir göz butonu eklenmelidir. 
+3. Kullanıcının girmiş olduğu bilgiler ile giriş yapabilmesi için "Login" butonu oluşturulmalıdır.
+4. Kullanıcı adı  ve şifre alanlarına girilen bilgilerin eksik veya 
+hatalı olması durumunda  veya kullanıcı adı-şifre uyumsuzluğu durumunda 
+sistem “Wrong user name or password. Please try again” uyarı mesajını 
+ekranda göstermelidir.
+5. Kullanıcı başarılı şekilde bilgileri doldurup "Login" butonuna tıkladığında müşteri 
+arama ekranı açılmalıdır.
+
+
+Requirement 2:
+Summary: Müşteri arama ekanının oluşturulması ve müşterilerin filtrelenebilmesi
+
+Accaptance Criterias:
+Varsayım 1: Kullanıcının CRM-1 Story'sindeki işlemleri tamamladığı ve filteleme sayfasına geldiği varsayılmıştır.
+
+1. CRM-1 story'sinde belirtilmiş giriş ekranından giriş yapmış olan kullanıcının bilgileri mockupta gösterildiği gibi "müşteri arama ekranı"nda gösterilmelidir.
+2. Kullanıcının web sayfasını Türkçe veya İngilizce dilinde görüntüleyebilmesi için bir seçim kutusu oluşturulmalıdır.
+ 2.1. Web sayfası varsayılan olaran İngilizce dilinde olmalıdır.
+3. Müşteri arama ekranında bulunduğumuz sekmeyi ve diğer sekmeleri gösteren bir bilgi ekranı oluşturulmalıdır.
+ 3.1. Sekmeler sırasıyla Dashboard, Business 2 Consumer, Business 2 Business, Settings olarak belirtilmelidir..
+ 3.2. Bilgi ekranı içerisinde kullanıcının çıkış yapabilmesi için bir logout butonu oluşturulmalıdır. 
+4. Kullanıcının müşterileri filtreleyebilmesi için bir filtreleme form ekranı oluşturulmalıdır.
+ 4.1. Müşteri arama ekranında filtreleme yapılabilecek sistemde tanımlı müşteri bilgilerini ve bilgilere girilebilecek veri tiplerini ekte bulunan musteriDetay.xlsx dosyasında bulabilirsiniz.
+ 4.2. Filtreleme form ekranı içerisindeki bilgilerin hepsi girdi kutusu olarak belirtilmelidir. 
+ 4.3. Müşteri bilgileri için filtreleme yapılırken, girdinin tamamının yazılarak aratılması gereklidir. Büyük küçük harf duyarlılığı yoktur.
+ Örneğin; Kullanıcı ismi aratılırken Nesibe için Nes yazdığında sonuç vermemeli ve kullanıcı Nesibe olarak arama yapmalıdır.
+ 4.4. Kullanıcının filtreleme form ekranında girdileri girdikten sonra aramayı yapabilmesi bir "Search" butonu olmalıdır. 
+ 4.5. Bir veya birden fazla girdi girildikten sonra, Filtrelerin hepsinin aynı anda kaldırılabilmesi için bir "Clear" butonu oluşturulmalıdır.
+ 4.6. Kullanıcı, filtre alanlarından herhangi birini doldurana kadar “Search” ve "Clear" butonları pasif kalmalıdır. 
+ 4.7. Kullanıcı filtreleme alanına gerekli bilgileri girip “search” butonuna bastığında, herhangi bir kayıt bulunamaması durumunda “No customer found! 
+	Would you like to create the customer?” uyarısı gösterilmeli ve “Create Customer” butonu oluşturulmalıdır. (pop-up da olabilir.)
+	4.7.1. "Create Customer" butonuna tıklandığında kullanıcı yaratma ekranına yönlendirmeli ve filtreleme form ekranında girilmiş olan bilgiler kullanıcı yaratma ekranında varsayılan olarak gösterilmeli. (
+ 4.8. Kullanıcı filtreleme alanlarına gerekli bilgileri girip “search" butonuna bastığında bulunan müşteri kayıtları bir tablo içerisinde gösterilmelidir.
+	Bu tabloda gösterilecek bilgiler:
+	-	Customer ID
+	-	First Name
+	-	Second Name
+	-	Last Name
+	-	Role
+	-	NAT ID Number
+ Tasarım aşağıdaki mockup gibi olmalıdır.
+5. Filtreleme form ekranının yanında "Create Customer" butonu oluşturulmalıdır. "Create Customer" butonuna tıklandığında kullanıcı yaratma ekranına yönlendirmelidir. 
+6. Kullanıcı, bulunan müşteri kayıtlarının gösterildiği listede, görüntülemeyi istediği müşterinin “Customer ID” değerine tıkladığında “Customer Info” ekranı açılacaktır.
+
+
+Requirement 4: 3 2'ye dahil edildi.
+Summary: Kullanıcının demografik bilgilerinin girildiği ekranın oluşturulması.
+
+Accaptance Criterias:
+Varsayım 1: Kullanıcının CRM-2 içerisindeki sayfada "Create Customer" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-2 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının, demografik bilgilerini girebileceği bir form ekranı oluşturulmalıdır.
+ 2.1. Kullanıcı form ekranı içerisindeki girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan demografikDetay.xlsx dosyasında bulabilirsiniz.
+3. Kullanıcının işlemi iptal edip CRM-2 de yapılmış olan Müşteri Arama Ekranına yönlendirilebilmesi için bir "Cancel" butonu oluşturulmalıdır.
+4. Kullanıcının girilmiş bilgiler ile Müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 4.1. Kullanıcı tarafından Demografik ekran içerisinde girilen “Nationality ID” sistemde var olan müşteri verileri ile karşılaştırılarak, eşleşen bir kayıt olup olmadığı sorgulanmalıdır.
+  4.1.1. Eşleşen bir "Nationality ID" olması durumunda bir uyarı pop-up ekranı açılarak kullanıcıya “A customer is already exist with this Nationality ID” uyarı mesajı gösterilmelidir.
+ 4.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra kullanıcı Müşteri Adresi Ekranına yönlendirmelidir.
+Tasarım aşağıdaki mockup gibi olmalıdır.
+
+
+Requirement 5:
+Summary: Kullanıcının adres bilgilerinin girildiği ve gözlemlendiği ekranın oluşturulması
+
+Accaptance Criterias:
+Varsayım 1: Kullanıcının CRM-4 içerisindeki sayfada "Next" butonuna tıklayarak bu sayfaya geldiği varsayılmıştır.
+
+1. CRM-2 içerisinde belirtilmiş olan 1., 2. ve 3. maddeler bu ister için de geçerlidir.
+2. Kullanıcının yeni bir adres oluşturabilmesi için "Add New Address" butonu oluşturulmalıdır. 
+ 2.1. "Add New Address" butonuna tıklandığında kullacının adres bilgilerinin girebileceği girdi kutuları ile adres kayıt ekranı oluşmalıdır. 
+ Girdi kutularının sistemde tanımlı isimlerini, veri tiplerini, girdi kutusu tipini ve doldurulma zorunluluklarını ekte bulunan adresDetay.xlsx dosyasında bulabilirsiniz.
+ 2.2. Adres bilgilerinin kullanıcı tarafından girilebilmesi için lokasyon seçim kutuları oluşturulmalıdır. Lokasyonlar, bu lokasyon seçim kutularında lokasyon adı içerisinde geçecek şekilde aranabilir. Büyük - küçük harf duyarlılığı yoktur.
+ 2.3. Kullanıcının girmiş olduğu bilgiler ile adresi oluşturabilmesi için "Save" butonu oluşturulmalıdır. "Save" butonuna tıklandığında Adres bilgisi kaydedilmeli ve kayıt ekranı kapanarak adres bilgi ekranı oluşmalıdır.
+ 2.4. "Add New Address" butonu kaydedilmiş olan adresin yanında görüntülenebilmeli ve aktif olmalıdır.
+3. Adres Bilgi Ekranında kullanıcının kayıt etmiş olduğu adres görüntülenebilmeli. 
+Tasarım mockuptaki gibi olmalıdır.
+ 3.1. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Delete” butonuna basarak silebilecektir.
+ 3.2. Kullanıcı, kaydedilen adresi, adres alanı içerisinde bulunan üç nokta içerisinden “Edit” butonuna basarak güncelleyebilecektir.
+4. Kullanıcının işlemi iptal edip CRM-4 de yapılmış olan Demografik Bilgi Ekranına yönlendirilebilmesi için bir "Previous" butonu oluşturulmalıdır.
+5. Kullanıcının girilmiş bilgiler ile Müşteri oluşturma işlemlerine devam edebilmesi için bir "Next" butonu oluşturulmalıdır.
+ 5.1. Adres bilgisi ekranı ilk açıldığında herhangi bir adres bilgisi girilmemiş olduğu için next butonu pasif kalmalıdır.
+ 5.2. Kullanıcı tarafından bilgiler eksiksiz doldurulduktan ve "Next" butonuna tıklandıktan sonra kullanıcı Müşteri Kontakt Bilgi Ekranına yönlendirmelidir.
